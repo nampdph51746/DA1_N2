@@ -17,7 +17,6 @@
                     <th class="border border-gray-300 px-4 py-2">Tên sản phẩm</th>
                     <th class="border border-gray-300 px-4 py-2">Hình ảnh</th>
                     <th class="border border-gray-300 px-4 py-2">Giá</th>
-                    <th class="border border-gray-300 px-4 py-2">Số Lượng Tồn Kho</th>
                     <th class="border border-gray-300 px-4 py-2">Danh mục</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Tạo</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Cập Nhật</th>
@@ -28,27 +27,34 @@
             <tbody class="bg-white">
                 @foreach ($products as $product )
                 
-                
                 <tr class="hover:bg-gray-100">
                     <td class="border border-gray-300 px-4 py-2 text-center">{{$product->id}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->product_name}}</td>
                     <td class="border border-gray-300 px-4 py-2 text-center">
-                        <img src="{{APP_URL . $product->image_url}}" alt="" class="w-16 h-16 object-cover rounded-md">
+                        <img src="{{APP_URL . $product->image_url}}" alt="" class="w-full max-w-xs h-auto object-cover rounded-lg shadow-md">
                     </td>
                     <td class="border border-gray-300 px-4 py-2 text-right">{{$product->price}}VNĐ</td>
-                    <td class="border border-gray-300 px-4 py-2">{{$product->stock}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->cate_name}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->created_at}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->updated_at}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td>
-                    <td class="border border-gray-300 px-4 py-2 text-center">
+                    <td class="border border-gray-300 px-10 py-2 text-center">
                         <div class="flex justify-center items-center gap-1">
-                            <a href="{{APP_URL. 'admin/products/edit/'.$product->id}}" class="bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-700 transition text-sm flex items-center">
-                                ✏️Sửa
+                            <a href="{{APP_URL. 'admin/products/detail/'.$product->id}}" 
+                            class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition text-sm inline-flex items-center gap-1 h-8">
+                                <span class="text-base leading-none">🔍</span>
+                                <span class="leading-none">Chi tiết</span>
                             </a>
-                            <a href="{{APP_URL. 'admin/products/delete/'.$product->id}}" onclick="return confirmDelete(event)"
-                                class="bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-700 transition text-sm flex items-center">
-                                ❌Xóa
+                            <a href="{{APP_URL. 'admin/products/edit/'.$product->id}}" 
+                            class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition text-sm inline-flex items-center gap-1 h-8">
+                                <span class="text-base leading-none">✏️</span>
+                                <span class="leading-none">Sửa</span>
+                            </a>
+                            <a href="{{APP_URL. 'admin/products/delete/'.$product->id}}" 
+                            onclick="return confirmDelete(event)"
+                            class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition text-sm inline-flex items-center gap-1 h-8">
+                                <span class="text-base leading-none">❌</span>
+                                <span class="leading-none">Xóa</span>
                             </a>
                         </div>
                     </td>

@@ -2,13 +2,17 @@
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
     <!-- Nội dung  -->
-    <h1 class="text-3xl font-bold text-blue-700 mb-6">➕ Thêm sản phẩm</h1>
+    <h1 class="text-3xl font-bold text-blue-700 mb-6">➕ Thêm biến thể</h1>
+    <h2 class="text-xl font-semibold text-gray-800 mb-4">
+        Biến thể của sản phẩm: <span class="text-blue-600">{{ $product->product_name }}</span>
+    </h2>
 
-    <form action="{{APP_URL . 'admin/products/store'}}" method="POST" class="bg-white p-6 rounded-lg shadow-md w-full max-w-lg" enctype="multipart/form-data">
-        
+    <form action="{{APP_URL . 'admin/product_variant/store'}}" method="POST" class="bg-white p-6 rounded-lg shadow-md w-full max-w-lg" enctype="multipart/form-data">
+        <input type="hidden" name="product_id" value="{{ $product->id }}">
+
         <div class="mb-4">
-            <label for="product_name" class="block text-gray-700 font-semibold">Tên sản phẩm:</label>
-            <input type="text" id="product_name" name="product_name"  
+            <label for="color" class="block text-gray-700 font-semibold">Màu sắc:</label>
+            <input type="text" id="color" name="color"  
                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                    >
         </div>
@@ -19,16 +23,12 @@
                     class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                    >
         </div>
+
         <div class="mb-4">
-            <label for="">Thương hiệu</label>
-            
-            <select name="category_id" id="category_id" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                 @foreach ($categories as $cate )
-                 <option value="{{$cate->id}}">
-                       {{$cate->category_name}}
-                 </option>
-                 @endforeach   
-            </select>
+            <label for="stock" class="block text-gray-700 font-semibold">Số lượng:</label>
+            <input type="text" id="stock" name="stock" 
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                   >
         </div>
     
         <div class="mb-4">
@@ -36,13 +36,6 @@
             <input type="text" id="price" name="price" 
                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                    >
-        </div>
-    
-        <div class="mb-4">
-            <label for="description" class="block text-gray-700 font-semibold">Mô tả:</label>
-            <textarea id="description" name="description"
-                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      ></textarea>
         </div>
     
         <button type="submit" 
