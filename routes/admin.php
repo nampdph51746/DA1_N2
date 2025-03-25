@@ -14,16 +14,16 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('/categories/edit/{id}', [CategoryController::class,'edit']);
         $router->post('/categories/update{id}', [CategoryController::class,'update']);
         $router->get('/categories/delete/{id}', [CategoryController::class,'destroy']);
-       
+        $router->get('categories/search', [CategoryController::class,'search']);
         // sản phẩm
-        $router->get('products',[ProductController::class,'index']);
+        $router->get('/products',[ProductController::class,'index']);
         $router->get('products/create',[ProductController::class,'create']);
         $router->post('products/store',[ProductController::class,'store']);
         $router->get('products/edit/{id}',[ProductController::class,'edit']);
         $router->post('products/update/{id}',[ProductController::class,'update']);
         $router->get('products/delete/{id}',[ProductController::class,'destroy']);
         $router->get('products/detail/{id}',[ProductController::class,'detail']);
-        
+        $router->get('products/search', [ProductController::class,'search']);
         // Biến thể
         $router->get('product_variant/create/{id}', [ProductVariantController::class, 'create']);
         $router->post('product_variant/store',[ProductVariantController::class,'store']);

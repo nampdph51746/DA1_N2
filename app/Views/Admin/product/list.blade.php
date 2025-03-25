@@ -2,13 +2,24 @@
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
     <!-- Nội dung  -->
+      
     <h1 class="text-3xl font-bold text-gray-800 mb-4">📦 Danh sách sản phẩm
+        <form action="{{APP_URL . 'admin/products/search'}}" method="GET" class=" justify-center my-2">
+            <div class="flex items-center bg-white shadow-sm rounded-full max-w-xs px-3 py-1 border border-gray-300">
+                <input type="text" name="query" class="w-full bg-transparent focus:outline-none text-sm px-2" placeholder="Nhập từ khóa...">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600 transition">
+                    Tìm
+                </button>
+            </div>
+        </form>
+        
         <div class="mt-4 text-left text-xl">
             <a href="{{APP_URL . 'admin/products/create'}}" class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition">
                 ➕ Thêm sản phẩm
             </a>
         </div>
     </h1>
+
 
         <table class="w-full border-collapse border border-gray-300 shadow-sm">
             <thead class="bg-blue-600 text-white">
