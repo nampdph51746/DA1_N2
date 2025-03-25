@@ -36,6 +36,7 @@ class CategoryController {
         $query=trim($_GET['query'] ??'');
         $categories= Category::where('category_name','like','%'.$query.'%')->get();
         return view("Admin.danhmuc.Category",compact("categories"));
+        
     }
   
 }
