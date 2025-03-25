@@ -76,4 +76,10 @@ class ProductController {
         // var_dump($product, $variants);
         return $blade->run("Admin.product.detail", compact("product", "variants"));
     }
+    public function search(){
+        $query=trim($_GET['query'] ?? '');
+        $products = Product::where('product_name','LIKE',"%$query%")->get();
+        return view("Admin.product.list",compact("products"));
+        
+    }
 }

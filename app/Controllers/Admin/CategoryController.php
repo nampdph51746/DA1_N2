@@ -32,4 +32,10 @@ class CategoryController {
             Category::delete(id: $id );
             return redirect('admin/categories');
     }
+    public function search(){
+        $query=trim($_GET['query'] ??'');
+        $categories= Category::where('category_name','like','%'.$query.'%')->get();
+        return view("Admin.danhmuc.Category",compact("categories"));
+    }
+  
 }
