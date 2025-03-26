@@ -1,4 +1,5 @@
 @extends('Admin.layoutadmin')
+@section('title','danh sách sản phẩm')
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
     <!-- Nội dung  -->
