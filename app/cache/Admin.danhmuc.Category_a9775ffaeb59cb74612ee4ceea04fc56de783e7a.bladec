@@ -1,5 +1,5 @@
 <?php $_shouldextend[1]=1; ?>
-<?php $this->startSection('title','danh muc san pham'); ?>
+<?php $this->startSection('title','Danh sách danh mục'); ?>
 
 <?php $this->startSection('content'); ?>
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
