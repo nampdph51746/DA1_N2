@@ -192,4 +192,24 @@ class BaseModel
         // dd($this->sqlBuilder);
         return $this;
     }
+    /**
+ * @method limit: giới hạn số lượng kết quả trả về
+ * @param $number: số lượng kết quả cần lấy
+ */
+public function limit($number)
+{
+    $this->sqlBuilder .= " LIMIT $number";
+    return $this;
+}
+
+/**
+ * @method orderBy: sắp xếp kết quả theo cột chỉ định
+ * @param $column: tên cột để sắp xếp
+ * @param $direction: hướng sắp xếp (ASC hoặc DESC)
+ */
+public function orderBy($column, $direction = "ASC")
+{
+    $this->sqlBuilder .= " ORDER BY `$column` $direction";
+    return $this;
+}
 }
