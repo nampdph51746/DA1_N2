@@ -2,6 +2,11 @@
 use App\Controllers\Admin\CategoryController;
 use App\Controllers\Admin\ProductController;
 use App\Controllers\Admin\ProductVariantController;
+<<<<<<< HEAD
+=======
+use App\Controllers\Admin\UserController;
+
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
 // $router->get('/admin', function () {
 //     return "View Admin";
 // });
@@ -24,6 +29,12 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('products/delete/{id}',[ProductController::class,'destroy']);
         $router->get('products/detail/{id}',[ProductController::class,'detail']);
         $router->get('products/search', [ProductController::class,'search']);
+<<<<<<< HEAD
+=======
+        //users
+        $router->get('users',[UserController::class,'index']);
+        $router->get('users/search',[UserController::class,'search']);
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
         // Biến thể
         $router->get('product_variant/create/{id}', [ProductVariantController::class, 'create']);
         $router->post('product_variant/store',[ProductVariantController::class,'store']);

@@ -80,9 +80,12 @@ class ProductController {
         $query=trim($_GET['query'] ?? '');
         $products = Product::where('product_name','LIKE',"%$query%")->get();
         return view("Admin.product.list",compact("products"));   
+<<<<<<< HEAD
 
 
 
         
+=======
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
     }
 }

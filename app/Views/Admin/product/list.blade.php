@@ -1,4 +1,8 @@
 @extends('Admin.layoutadmin')
+<<<<<<< HEAD
+=======
+@section('title','danh sách sản phẩm')
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
     <!-- Nội dung  -->
@@ -31,7 +35,11 @@
                     <th class="border border-gray-300 px-4 py-2">Danh mục</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Tạo</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Cập Nhật</th>
+<<<<<<< HEAD
                     <th class="border border-gray-300 px-4 py-2">Mô tả</th>
+=======
+                    {{-- <th class="border border-gray-300 px-4 py-2">Mô tả</th> --}}
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
                     <th class="border border-gray-300 px-4 py-2">Hành động</th>
                 </tr>
             </thead>
@@ -48,7 +56,11 @@
                     <td class="border border-gray-300 px-4 py-2">{{$product->cate_name}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->created_at}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->updated_at}}</td>
+<<<<<<< HEAD
                     <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td>
+=======
+                    {{-- <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td> --}}
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
                     <td class="border border-gray-300 px-10 py-2 text-center">
                         <div class="flex justify-center items-center gap-1">
                             <a href="{{APP_URL. 'admin/products/detail/'.$product->id}}" 
