@@ -32,7 +32,7 @@
                     <th class="border border-gray-300 px-4 py-2">Danh mục</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Tạo</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Cập Nhật</th>
-                    <th class="border border-gray-300 px-4 py-2">Mô tả</th>
+                    {{-- <th class="border border-gray-300 px-4 py-2">Mô tả</th> --}}
                     <th class="border border-gray-300 px-4 py-2">Hành động</th>
                 </tr>
             </thead>
@@ -49,7 +49,7 @@
                     <td class="border border-gray-300 px-4 py-2">{{$product->cate_name}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->created_at}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->updated_at}}</td>
-                    <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td>
+                    {{-- <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td> --}}
                     <td class="border border-gray-300 px-10 py-2 text-center">
                         <div class="flex justify-center items-center gap-1">
                             <a href="{{APP_URL. 'admin/products/detail/'.$product->id}}" 

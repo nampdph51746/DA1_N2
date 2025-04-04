@@ -1,6 +1,7 @@
 @extends('Client.layout')
 
 @section('content')
+
 <div class="container mx-auto px-4">
     <h2 class="text-2xl font-bold mb-6 text-center">Danh sách sản phẩm</h2>
     
