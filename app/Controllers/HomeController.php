@@ -1,8 +1,10 @@
 <?php
 namespace App\Controllers;
 
+use App\Controllers\Admin\ProductController;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Product_Variant;
 
 class HomeController {
     public function index(){
@@ -20,8 +22,14 @@ class HomeController {
     }
     public function chitiet($id){
         $product=Product::find($id);
+        $products=Product::select(['products.*','categories.category_name as cate_name'])
+        ->join('categories','categories.id','products.category_id')
+        ->where('category_id','=',$product->category_id)
+        ->andWhere('id','!=',$product->id)
+        ->get();
         $category= Category::find($product->category_id);
-        return view('Client.chitiet',compact('product','category'));
+        $product_variants=Product_Variant::where('product_id','=', $product->id)->get();
+        return view('Client.chitiet',compact('product','category','product_variants','products'));
     }
     public function timkiem(){
         $query = trim($_GET['query'] ?? '');
@@ -38,4 +46,14 @@ class HomeController {
         }
         return view ('Client.sanpham',compact('products','message'));
     }
+
+    // public function sanphamTheoDanhMuc($id){
+    //     $product=Product::find($id);
+    //     $products=Product::select(['products.*','categories.category_name as cate_name'])
+    //     ->join('categories','categories.id','products.category_id')
+    //     ->where('products.category_id','=',$id)
+    //     ->get();
+    //     return view('Client.chitiet',compact('products'));
+    // }
+    
 }

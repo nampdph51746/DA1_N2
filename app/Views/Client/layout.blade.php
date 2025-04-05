@@ -6,10 +6,11 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <section class="container max-w-screen-xl m-auto flex items-center justify-between py-4">
-        <img loading="lazy" src="{{APP_URL }}/images/logo.jpg" class="w-24 h-24">
+        <img loading="lazy" src="{{APP_URL }}/images/logo_1.jpg" class="w-40 h-30">
         <ul class="flex gap-8 font-medium text-xl">
             <li class="hover:text-amber-500"><a href="{{APP_URL .''}}">Trang chủ</a></li>
             <li class="hover:text-amber-500"><a href="{{APP_URL .'sanpham'}}">Sản phẩm</a></li>
@@ -26,23 +27,23 @@
     <section class="relative w-full max-w-screen-xl mx-auto overflow-hidden">
         <!-- Slideshow Container -->
         <div class="relative h-[400px]">
-            <img loading="lazy" src="{{APP_URL }}/images/bn4.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-100 opacity-100 slide active">
-            <img loading="lazy" src="{{APP_URL }}/images/bn2.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-0 opacity-0 slide">
-            <img loading="lazy" src="{{APP_URL }}/images/bn3.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-0 opacity-0 slide">
+            <img loading="lazy" src="{{APP_URL }}/images/banner_1.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100 slide active">
+            <img loading="lazy" src="{{APP_URL }}/images/banner_2.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 slide">
+            <img loading="lazy" src="{{APP_URL }}/images/banner_3.jpg" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 slide">
         </div>
 
         <!-- Previous Button -->
         <button 
             class="absolute top-1/2 left-2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-900 p-2 rounded-full z-10" 
             onclick="changeSlide(-1)">
-            &#10094;
+            ❮
         </button>
 
         <!-- Next Button -->
         <button 
             class="absolute top-1/2 right-2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-900 p-2 rounded-full z-10" 
             onclick="changeSlide(1)">
-            &#10095;
+            ❯
         </button>
     </section>
     <!--End Banner-->
@@ -52,21 +53,21 @@
     <section class="bg-[#FFF7ED] py-16 mt-16">
         <div class="container max-w-screen-xl m-auto grid grid-cols-4">
             <div class="flex gap-5 items-center">
-                <img loading="lazy" src="{{APP_URL }}/images/anhgia.jpg" style="height: 55px; width: 55px;">
+                <img loading="lazy" src="{{APP_URL }}/images/icon_1.png" style="height: 55px; width: 55px;">
                 <div>
                     <h3 class="font-semibold text-xl mb-1">Giá cả phải chăng</h3>
                     <p class="text-[#898989]">Dễ dàng tiếp cận các laptop thế hệ mới giá tốt.</p>
                 </div>
             </div>
             <div class="flex gap-5 items-center">
-                <img loading="lazy" src="{{APP_URL }}/images/anhluachon.jpg" style="height: 55px; width: 55px;">
+                <img loading="lazy" src="{{APP_URL }}/images/icon_2.png" style="height: 55px; width: 55px;">
                 <div>
                     <h3 class="font-semibold text-xl mb-1">Lựa chọn đa dạng</h3>
                     <p class="text-[#898989]">Vô vàn lựa chọn phù hợp với sở thích của bạn.</p>
                 </div>
             </div>
             <div class="flex gap-5 items-center">
-                <img loading="lazy" src="{{APP_URL }}/images/anh247.jpg" style="height: 55px; width: 55px;">
+                <img loading="lazy" src="{{APP_URL }}/images/icon_3.png" style="height: 55px; width: 55px;">
                 <div>
                     <h3 class="font-semibold text-xl mb-1"> 
                     Dịch vụ 24/7</h3>
@@ -74,7 +75,7 @@
                 </div>
             </div>
             <div class="flex gap-5 items-center">
-                <img loading="lazy" src="{{APP_URL }}/images/anhcauhinh.jpg" style="height: 55px; width: 55px;">
+                <img loading="lazy" src="{{APP_URL }}/images/icon_4.png" style="height: 55px; width: 55px;">
                 <div>
                     <h3 class="font-semibold text-xl mb-1">Cấu hình cao cấp</h3>
                     <p class="text-[#898989]">Trải nghiệm nhưng cấu hình tuyệt vời.</p>
@@ -120,3 +121,50 @@
     </footer>
 </body>
 </html>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        // Đảm bảo index nằm trong khoảng hợp lệ
+        if (index >= totalSlides) currentSlide = 0;
+        else if (index < 0) currentSlide = totalSlides - 1;
+        else currentSlide = index;
+
+        // Ẩn tất cả slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+            slide.style.opacity = '0';
+        });
+
+        // Hiển thị slide hiện tại
+        slides[currentSlide].classList.add('active');
+        slides[currentSlide].style.opacity = '1';
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    // Tự động chạy slideshow mỗi 3 giây
+    function autoSlide() {
+        changeSlide(1);
+    }
+
+    // Bắt đầu slideshow tự động
+    let slideInterval = setInterval(autoSlide, 3000);
+
+    // Tạm dừng khi hover (tùy chọn)
+    const slideshowContainer = document.querySelector('.relative.w-full');
+    slideshowContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+    slideshowContainer.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(autoSlide, 3000);
+    });
+
+    // Hiển thị slide đầu tiên khi tải trang
+    showSlide(currentSlide);
+</script>

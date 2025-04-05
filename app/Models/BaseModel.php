@@ -112,12 +112,16 @@ class BaseModel
     public static function where($column, $operator, $value)
     {
         $model = new static;
+    
+        // Kiểm tra nếu chưa có sqlBuilder thì khởi tạo
         if ($model->sqlBuilder == null) {
             $model->sqlBuilder = "SELECT * FROM $model->tableName WHERE `$column` $operator :$column";
         } else {
-            $model->sqlBuilder .= " WHERE `$column` $operator :$column ";
+            $model->sqlBuilder .= " AND `$column` $operator :$column";
         }
-        $model->params["$column"] = $value;
+    
+        // Bind tham số
+        $model->params[":$column"] = $value;  // Sử dụng :$column để bind tham số đúng cách
         return $model;
     }
 
@@ -212,4 +216,15 @@ public function orderBy($column, $direction = "ASC")
     $this->sqlBuilder .= " ORDER BY `$column` $direction";
     return $this;
 }
+
+public function groupBy($columns)
+{
+    if (is_array($columns)) {
+        $columns = implode(", ", $columns);
+    }
+    $this->sqlBuilder .= " GROUP BY $columns";
+    return $this;
 }
+}
+
+

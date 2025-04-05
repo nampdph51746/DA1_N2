@@ -33,10 +33,32 @@ class CategoryController {
             return redirect('admin/categories');
     }
     public function search(){
-        $query=trim($_GET['query'] ??'');
-        $categories= Category::where('category_name','like','%'.$query.'%')->get();
-        return view("Admin.danhmuc.Category",compact("categories"));
-        
+        $query=trim($_GET['name'] ?? '');
+        $status=trim($_GET['status'] ?? '');
+
+        $hasWhere=false;
+        $categories=null;
+
+        if($query !== ''){
+            $categories = Category::where('category_name','LIKE',"%$query%");
+            $hasWhere=true;
+        }
+
+        if($status !== ''){
+            if($hasWhere){
+                $categories->andWhere('category_status','=',$status);
+            }else{
+                $categories=Category::where('category_status','=',$status);
+                $hasWhere=true;
+            }
+        }
+
+        if(!$hasWhere){
+            $categories=Category::all();
+        }else{
+            $categories=$categories->get();
+        }
+        return view("Admin.danhmuc.Category",compact('categories'));
     }
   
 }

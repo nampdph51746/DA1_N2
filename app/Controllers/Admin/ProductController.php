@@ -62,7 +62,7 @@ class ProductController {
     public function detail($id){
         $product =  Product::select(['products.*','categories.category_name as cate_name'])
         ->join('categories','categories.id', 'products.category_id')
-        // ->where('products.id', '=', $id)
+        ->where('id', '=', $id)
         ->first();
         // echo $product->getSql();
         // exit;
@@ -77,15 +77,63 @@ class ProductController {
         return $blade->run("Admin.product.detail", compact("product", "variants"));
     }
     public function search(){
-        $query=trim($_GET['query'] ?? '');
-        $products = Product::where('product_name','LIKE',"%$query%")->get();
-        return view("Admin.product.list",compact("products"));   
-<<<<<<< HEAD
+        $query=trim($_GET['name'] ?? '');
+        $id=trim($_GET['id'] ?? '');
+        $price_min=trim($_GET['price_min'] ?? '');
+        $price_max=trim($_GET['price_max'] ?? '');
+        $created_at=trim($_GET['created_at'] ?? '');
+        $updated_at=trim($_GET['updated_at'] ?? '');
+        $status=trim($_GET['status'] ?? '');
 
+        $hasWhere=false;
+        $products=null;
 
+        if($query !== ''){
+            $products = Product::where('product_name','LIKE',"%$query%");
+            $hasWhere=true;
+        }
 
-        
-=======
->>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
+        if($id !== ''){
+            if($hasWhere){
+                $products->andWhere('id','=',$id);
+            }else{
+                $products=Product::where('id','=',$id);
+                $hasWhere=true;
+            }
+        }
+
+        if($price_min !== ''){
+            if($hasWhere){
+                $products->andWhere('price','>=',$price_min);
+            }else{
+                $products=Product::where('price','>=',$price_min);
+                $hasWhere=true;
+            }
+        }
+
+        if($price_max !== ''){
+            if($hasWhere){
+                $products->andWhere('price','<=',$price_max);
+            }else{
+                $products=Product::where('price','<=',$price_max);
+                $hasWhere=true;
+            }
+        }
+
+        if($status !== ''){
+            if($hasWhere){
+                $products->andWhere('status','=',$status);
+            }else{
+                $products=Product::where('status','=',$status);
+                $hasWhere=true;
+            }
+        }
+
+        if(!$hasWhere){
+            $products=Product::all();
+        }else{
+            $products=$products->get();
+        }
+        return view("Admin.product.list",compact('products'));
     }
 }

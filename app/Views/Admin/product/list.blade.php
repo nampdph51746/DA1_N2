@@ -1,21 +1,41 @@
 @extends('Admin.layoutadmin')
-<<<<<<< HEAD
-=======
 @section('title','danh sách sản phẩm')
->>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
     <!-- Nội dung  -->
       
     <h1 class="text-3xl font-bold text-gray-800 mb-4">📦 Danh sách sản phẩm
-        <form action="{{APP_URL . 'admin/products/search'}}" method="GET" class=" justify-center my-2">
-            <div class="flex items-center bg-white shadow-sm rounded-full max-w-xs px-3 py-1 border border-gray-300">
-                <input type="text" name="query" class="w-full bg-transparent focus:outline-none text-sm px-2" placeholder="Nhập từ khóa...">
-                <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600 transition">
-                    Tìm
+    <form action="{{ APP_URL . 'admin/products/search' }}" method="GET" class="space-y-2 my-4">
+        <div class="flex flex-wrap gap-2">
+            <!-- Tìm theo tên -->
+            <input type="text" name="name" placeholder="Tên sản phẩm" class="w-full md:w-1/3 border border-gray-300 rounded px-3 py-2 text-sm" />
+
+            <!-- Tìm theo ID -->
+            <input type="number" name="id" placeholder="ID sản phẩm" class="w-full md:w-1/6 border border-gray-300 rounded px-3 py-2 text-sm" />
+
+            <!-- Giá từ -->
+            <input type="number" name="price_min" step="1000" placeholder="Giá từ" class="w-full md:w-1/6 border border-gray-300 rounded px-3 py-2 text-sm" />
+
+            <!-- Giá đến -->
+            <input type="number" name="price_max" step="1000" placeholder="Giá đến" class="w-full md:w-1/6 border border-gray-300 rounded px-3 py-2 text-sm" />
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+            <select name="status" class="w-full md:w-1/4 border border-gray-300 rounded px-3 py-2 text-sm">
+                <option value="">Tất cả trạng thái</option>
+                <option value="Đang bán">Đang bán</option>
+                <option value="Ngừng bán">Ngừng bán</option>
+            </select>
+            <div class="flex justify-end">
+                <button type="submit" class="bg-blue-500 text-white px-5 py-2 rounded-full text-sm hover:bg-blue-600 transition">
+                    Tìm kiếm
+                </button>
+                <button type="submit" class="bg-gray-500 text-white px-5 py-2 rounded-full text-sm hover:bg-gray-600 transition">
+                    Reset
                 </button>
             </div>
-        </form>
+        </div>
+    </form>
         
         <div class="mt-4 text-left text-xl">
             <a href="{{APP_URL . 'admin/products/create'}}" class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition">
@@ -33,13 +53,10 @@
                     <th class="border border-gray-300 px-4 py-2">Hình ảnh</th>
                     <th class="border border-gray-300 px-4 py-2">Giá</th>
                     <th class="border border-gray-300 px-4 py-2">Danh mục</th>
+                    <th class="border border-gray-300 px-4 py-2">Trạng thái</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Tạo</th>
                     <th class="border border-gray-300 px-4 py-2">Ngày Cập Nhật</th>
-<<<<<<< HEAD
                     <th class="border border-gray-300 px-4 py-2">Mô tả</th>
-=======
-                    {{-- <th class="border border-gray-300 px-4 py-2">Mô tả</th> --}}
->>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
                     <th class="border border-gray-300 px-4 py-2">Hành động</th>
                 </tr>
             </thead>
@@ -54,13 +71,16 @@
                     </td>
                     <td class="border border-gray-300 px-4 py-2 text-right">{{$product->price}}VNĐ</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->cate_name}}</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                        <span class="font-semibold px-2 py-1 rounded 
+                            {{ $product->status == 'Đang bán' ? 'text-green-600 font-bold' : 'text-red-600 font-bold' }}">
+                            {{ $product->status }}
+                        </span>
+                    </td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->created_at}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$product->updated_at}}</td>
-<<<<<<< HEAD
                     <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td>
-=======
                     {{-- <td class="border border-gray-300 px-4 py-2">{{$product->description}}</td> --}}
->>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
                     <td class="border border-gray-300 px-10 py-2 text-center">
                         <div class="flex justify-center items-center gap-1">
                             <a href="{{APP_URL. 'admin/products/detail/'.$product->id}}" 

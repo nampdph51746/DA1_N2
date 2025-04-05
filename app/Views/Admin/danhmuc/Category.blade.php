@@ -1,20 +1,31 @@
 @extends('Admin.layoutadmin')
-<<<<<<< HEAD
-@section('title','danh muc san pham')
-=======
 @section('title','Danh sách danh mục')
->>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
 
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
   <!-- Nội dung  -->
   <h1 class="text-3xl font-bold text-gray-800 mb-4">📦 Danh sách danh mục
-    <form action="{{APP_URL . 'admin/categories/search'}}" method="GET" class=" justify-center my-2">
-        <div class="flex items-center bg-white shadow-sm rounded-full max-w-xs px-3 py-1 border border-gray-300">
-            <input type="text" name="query" class="w-full bg-transparent focus:outline-none text-sm px-2" placeholder="Nhập từ khóa...">
-            <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600 transition">
-                Tìm
-            </button>
+    <form action="{{APP_URL . 'admin/categories/search'}}" method="GET" class=" space-y-2 my-4">
+        <div class="flex flex-wrap gap-2">
+            <!-- Tìm theo tên -->
+            <input type="text" name="name" placeholder="Tên danh mục" class="w-full md:w-1/3 border border-gray-300 rounded px-3 py-2 text-sm" />
+
+            <select name="status" class="w-full md:w-1/4 border border-gray-300 rounded px-3 py-2 text-sm">
+                <option value="">Tất cả trạng thái</option>
+                <option value="Đang kinh doanh">Đang kinh doanh</option>
+                <option value="Ngừng kinh doanh">Ngừng kinh doanh</option>
+            </select>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+            <div class="flex justify-end">
+                <button type="submit" class="bg-blue-500 text-white px-5 py-2 rounded-full text-sm hover:bg-blue-600 transition">
+                    Tìm kiếm
+                </button>
+                <button type="submit" class="bg-gray-500 text-white px-5 py-2 rounded-full text-sm hover:bg-gray-600 transition">
+                    Reset
+                </button>
+            </div>
         </div>
     </form>
       <div class="mt-4 text-left text-xl">
@@ -37,8 +48,13 @@
             @foreach ( $categories as $cate )
               <tr class="hover:bg-gray-100">
                   <td class="border border-gray-300 px-4 py-2 text-center">{{$cate->id}}</td>
-                  <td class="border border-gray-300 px-4 py-2"> {{$cate->category_name}}</td>
-                  <td class="border border-gray-300 px-4 py-2"> {{$cate->category_status}}</td>
+                  <td class="border border-gray-300 px-4 py-2 text-center"> {{$cate->category_name}}</td>
+                  <td class="border border-gray-300 px-4 py-2">
+                        <span class="font-semibold px-2 py-1 rounded 
+                            {{ $cate->category_status == 'Đang kinh doanh' ? 'text-green-600 font-bold text-center' : 'text-red-600 font-bold text-center' }}">
+                            {{ $cate->category_status }}
+                        </span>
+                    </td>
                   <td class="border border-gray-300 px-4 py-2 text-center">
                       <a href="{{APP_URL . 'admin/categories/edit/'.$cate->id }}" 
                           class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition">
