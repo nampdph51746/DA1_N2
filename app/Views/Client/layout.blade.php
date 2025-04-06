@@ -20,7 +20,7 @@
         <div class="flex items-center gap-4">
             <span class="material-symbols-outlined">search</span>
             <span class="material-symbols-outlined">favorite</span>
-            <span class="material-symbols-outlined">shopping_cart</span>
+            <span class="material-symbols-outlined"><a href="{{APP_URL .'cart'}}">shopping_cart</a></span>
         </div>
     </section>
     <!--End Header-->

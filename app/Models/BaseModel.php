@@ -225,6 +225,23 @@ public function groupBy($columns)
     $this->sqlBuilder .= " GROUP BY $columns";
     return $this;
 }
+
+public function getSql()
+{
+    $sql = $this->sqlBuilder;
+    $params = $this->params;
+
+    if (!$sql) return null;
+
+    foreach ($params as $key => $value) {
+        $quoted = $this->conn->quote($value); // xử lý giá trị an toàn
+        $key = ltrim($key, ':'); // loại bỏ dấu : nếu có
+        $sql = preg_replace('/:'.preg_quote($key, '/').'(?=\W|$)/', $quoted, $sql);
+    }
+
+    return $sql;
+}
+
 }
 
 
