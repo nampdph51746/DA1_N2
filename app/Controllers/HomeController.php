@@ -1,11 +1,13 @@
 <?php
 namespace App\Controllers;
 
-use App\Controllers\Admin\ProductController;
-use App\Models\Category;
+use App\Models\User;
+use App\Models\Review;
 use App\Models\Product;
-use App\Models\Product_Variant;
 use App\Models\Voucher;
+use App\Models\Category;
+use App\Models\Product_Variant;
+use App\Controllers\Admin\ProductController;
 
 class HomeController {
     public function index(){
@@ -16,11 +18,21 @@ class HomeController {
         return view('Client.home',compact(var_name: 'products'));
     }
     public function sanpham(){
-     $products = Product::select(['products.*','categories.category_name as cate_name'])
-     ->join('categories','categories.id','products.category_id')
-     ->get();
-     return view('Client.sanpham',compact('products'));
+        $categories = Category::all();
+        $categoryID=$_GET['category_id'] ?? null;
+        if($categoryID){
+           $products= Product::select(['products.*'])
+           ->Where('category_id','=',$categoryID)
+           ->get();
+        }else{
+            $products = Product::select(['products.*','categories.category_name as cate_name'])
+            ->join('categories','categories.id','products.category_id')
+            ->get();
+        };
+    
+     return view('Client.sanpham',compact('products','categories','categoryID'));
     }
+
     public function chitiet($id){
         $product=Product::find($id);
         $products=Product::select(['products.*','categories.category_name as cate_name'])
@@ -29,12 +41,18 @@ class HomeController {
         ->andWhere('id','!=',$product->id)
         ->get();
         $category= Category::find($product->category_id);
+        $reviews = Review::where('product_id','=', $id)->get();
+        foreach($reviews as $review){
+            $review->user = User::find($review->user_id);
+        }
         $product_variants=Product_Variant::where('product_id','=', $product->id)->get();
-        return view('Client.chitiet',compact('product','category','product_variants','products'));
+        return view('Client.chitiet',compact('product','category','product_variants','products','reviews'));
     }
     public function timkiem(){
         $query = trim($_GET['query'] ?? '');
-        $products = Product::where('product_name','LIKE','%'.''.$query.'%')
+        $categories = Category::all();
+        $products = Product::select(['products.*'])
+        ->where('product_name','like','%'.$query.'%')
         ->get();
         $message = '';
         if($query !=''){
@@ -45,7 +63,7 @@ class HomeController {
         }else{
             $message = 'Vui lòng nhập từ khóa tìm kiếm';
         }
-        return view ('Client.sanpham',compact('products','message'));
+        return view ('Client.sanpham',compact('products','message','categories','query'));
     }
 
     public function cart(){

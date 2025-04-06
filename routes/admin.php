@@ -19,6 +19,7 @@ $router->group(['before'=>'admin'], function($router){
         $router->post('/categories/update{id}', [CategoryController::class,'update']);
         $router->get('/categories/delete/{id}', [CategoryController::class,'destroy']);
         $router->get('categories/search', [CategoryController::class,'search']);
+
         // sản phẩm
         $router->get('/products',[ProductController::class,'index']);
         $router->get('products/create',[ProductController::class,'create']);
@@ -28,17 +29,14 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('products/delete/{id}',[ProductController::class,'destroy']);
         $router->get('products/detail/{id}',[ProductController::class,'detail']);
         $router->get('products/search', [ProductController::class,'search']);
+
         // Biến thể
         $router->get('product_variant/create/{id}', [ProductVariantController::class, 'create']);
         $router->post('product_variant/store',[ProductVariantController::class,'store']);
         $router->get('product_variant/edit/{id}',[ProductVariantController::class,'edit']);
         $router->post('product_variant/update/{id}',[ProductVariantController::class,'update']);
         $router->get('product_variant/delete/{id}',[ProductVariantController::class,'destroy']);
-        // Đơn hàng
-        $router->get('/orders',[OrderController::class,'index']);
-        $router->post('orders/update-status',[OrderController::class,'updateStatus']);
-        $router->get('orders/detail/{id}',[OrderController::class,'detail']);
-        $router->get('orders/search', [OrderController::class,'search']);
+
         // Người dùng
         $router->get('/users',[UserController::class,'index']);
         $router->get('users/create',[UserController::class,'create']);
@@ -48,6 +46,13 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('users/delete/{id}',[UserController::class,'destroy']);
         $router->get('users/detail/{id}',[UserController::class,'detail']);
         $router->get('users/search', [UserController::class,'search']);
+
+        // Đơn hàng
+        $router->get('/orders',[OrderController::class,'index']);
+        $router->get('orders/detail/{id}',[OrderController::class,'detail']);
+        $router->post('orders/update-status',[OrderController::class,'updateStatus']);
+        $router->get('orders/search', [OrderController::class,'search']);
+
         // Bình luận
         $router->get('/reviews',[ReviewController::class,'index']);
         $router->get('reviews/edit/{id}',[ReviewController::class,'edit']);
@@ -55,6 +60,7 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('reviews/delete/{id}',[ReviewController::class,'destroy']);
         $router->get('reviews/detail/{id}',[ReviewController::class,'detail']);
         $router->get('reviews/search', [ReviewController::class,'search']);
+
         // Voucher
         $router->get('/vouchers',[VoucherController::class,'index']);
         $router->get('vouchers/edit/{id}',[VoucherController::class,'edit']);

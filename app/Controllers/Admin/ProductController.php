@@ -62,8 +62,10 @@ class ProductController {
     public function detail($id){
         $product =  Product::select(['products.*','categories.category_name as cate_name'])
         ->join('categories','categories.id', 'products.category_id')
+        // ->join('categories','categories.id', 'products.category_id')
         ->where('id', '=', $id)
         ->first();
+        $product->cate_name = $_GET['cate_name'];
         // echo $product->getSql();
         // exit;
         // var_dump($product);

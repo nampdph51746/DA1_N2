@@ -55,16 +55,19 @@
                             {{ $cate->category_status }}
                         </span>
                     </td>
+                  <!-- <td class="border border-gray-300 px-4 py-2 text-center
+                  {{ $cate->category_status === 'Đang kinh doanh' ? 'text-green-600 font-bold' : 'text-red-600 font-bold' }}"> 
+                  {{$cate->category_status}}</td> -->
                   <td class="border border-gray-300 px-4 py-2 text-center">
                       <a href="{{APP_URL . 'admin/categories/edit/'.$cate->id }}" 
                           class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition">
                               ✏️ Sửa
                       </a>
-                      <a href="{{APP_URL . 'admin/categories/delete/'.$cate->id }}" 
+                      <!-- <a href="{{APP_URL . 'admin/categories/delete/'.$cate->id }}" 
                           onclick="return confirmDelete(event)"
                           class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition ml-2">
                               ❌ Xóa
-                      </a>
+                      </a> -->
                   </td>
               </tr>
               @endforeach

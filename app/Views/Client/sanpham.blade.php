@@ -3,69 +3,21 @@
 @section('content')
 <div class="container mx-auto py-8">
     <section class="bg-white py-8 px-6 rounded-lg shadow-lg w-full max-w-screen-xl mx-auto mt-8">
-        <form action="" method="post" class="grid grid-cols-5 gap-6">
-            <!-- Search by Room Name -->
-            <div class="col-span-1 flex flex-col">
-                <label for="" class="block text-sm font-medium text-black-800 mb-2">Tên sản phẩm</label>
-                    <input 
-                        type="text" 
-                        id="" 
-                        name="" 
-                        placeholder="Nhập tên sản phẩm"
-                        class="block w-full rounded-md border border-black-300 focus:ring-amber-500 focus:border-amber-500 text-sm py-2 px-4 text-black-700"
-                    >
-            </div>
-
-            <!-- Search by Room Type -->
-                <div class="col-span-1 flex flex-col">
-                    <label for="" class="block text-sm font-medium text-black-800 mb-2">Hãng</label>
-                        <select 
-                            id="" 
-                            name=""
-                            class="block w-full rounded-md border border-black-300 focus:ring-amber-500 focus:border-amber-500 text-sm py-2 px-4 text-black-700"
-                        >
-                            <option value="">Chọn hãng</option>
-                            <!-- <?php foreach ($danhsachdm as $dm): ?>
-                                <option value="<?= $dm['category_id'] ?>"><?= htmlspecialchars($dm['category_name']) ?></option>
-                            <?php endforeach; ?> -->
-                        </select>
-                </div>
-
-                    <!-- Check Availability -->
-                    <div class="col-span-1 flex items-center space-x-3">
-                        <input 
-                            type="checkbox" 
-                            id="check-availability" 
-                            name="check-availability"
-                            class="h-5 w-5 text-amber-500 border-black-300 rounded focus:ring-amber-500"
-                        >
-                        <label for="check-availability" class="text-sm font-medium text-black-800">Còn hàng</label>
-                    </div>
-
-                    <!-- Search Button -->
-                    <div class="col-span-5 flex justify-center mt-4">
-                        <button 
-                            type="submit" 
-                            name="timkiem"
-                            class="bg-amber-500 text-white text-sm font-medium py-3 px-10 rounded-lg shadow-md hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
-                        >
-                            Tra cứu
-                        </button>
-                    </div>
-                </form>
-            </section> 
-    <!-- <div class="flex flex-col md:flex-row justify-end items-center mb-8 gap-4">  
+    <!-- Bộ lọc sản phẩm & Form tìm kiếm -->
+    <div class="flex flex-col md:flex-row justify-end items-center mb-8 gap-4">
+        
+        <!-- Form tìm kiếm -->
         <form action="{{APP_URL .'timkiem'}}" method="GET" class="flex w-full md:w-auto ">    
             <input type="text" name="query" placeholder="Tìm kiếm laptop..." 
-                class="border border-purple-300 p-2 rounded-l w-full md:w-64 focus:ring-2 focus:ring-yellow-500">
-            <button type="submit" class="bg-yellow-500 text-white px-4 rounded-r hover:bg-yellow-700 transition">
+                class="border border-gray-300 p-2 rounded-l w-full md:w-64 focus:ring-2 focus:ring-blue-500">
+            <button type="submit" class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-700 transition">
                 🔍
-            </button>     
+            </button>
+            
         </form>
-    </div> -->
-    <!-- @if(isset($message) && $message != '')
-    <p class="text-lg font-semibold text-yellow-500">{{ $message }}</p> -->
-<!-- @endif -->
+
+        
+    </div>
                                 
     <!-- Hiển thị sản phẩm -->
     <section class="container max-w-screen-xl mx-auto grid grid-cols-12 gap-8 mt-16">
@@ -73,9 +25,26 @@
             <div class="col-span-3">
                     <h2 class="font-semibold text-2xl mb-6 text-black-800">Danh mục sản phẩm</h2>
                     <ul class="space-y-2">
-
+                        <li>
+                            <a href="{{ APP_URL . 'sanpham' }}" 
+                            class="block p-2 rounded {{ !isset($categoryID) ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-100' }}">
+                                Tất cả sản phẩm
+                            </a>
+                        </li>
+                        @foreach ($categories as $category)
+                        <li>
+                            <a href="{{ APP_URL . 'sanpham?category_id=' . $category->id }}" 
+                            class="block p-2 rounded {{ isset($categoryID) && $categoryID == $category->id ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-100' }}">
+                                {{ $category->category_name }}
+                            </a>
+                        </li>
+                        @endforeach
                     </ul>
                 </div>
+
+                @if(isset($message) && $message != '')
+                    <p class="text-lg font-semibold text-blue-500">{{ $message }}</p>
+                    @endif
 
                 <!-- Products List -->
                 <div class="col-span-9">

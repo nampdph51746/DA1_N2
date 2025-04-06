@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+  <div class="card shadow p-4" style="width: 100%; max-width: 450px;">
+    <h2 class="text-center mb-4">Đăng ký</h2>
+    <form action="" method="POST">
+      <div class="mb-3">
+        <label for="username" class="form-label">Tên đăng nhập</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Nhập tên đăng nhập" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu" required>
+      </div>
+      <div class="mb-3">
+        <label for="full_name" class="form-label">Họ và tên</label>
+        <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Nhập họ và tên" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Nhập email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Địa chỉ</label>
+        <input type="text" id="address" name="address" class="form-control" placeholder="Nhập địa chỉ" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Đăng ký</button>
+    </form>
+
+    <div class="text-center mt-3">
+      <a href="{{APP_URL . 'login'}}" class="btn btn-outline-primary">Đã có tài khoản? Đăng nhập</a>
+    </div>
+  </div>
+
+</body>
+</html>
