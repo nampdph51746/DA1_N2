@@ -4,9 +4,17 @@ use App\Controllers\Admin\ProductController;
 use App\Controllers\Admin\ProductVariantController;
 use App\Controllers\Admin\UserController;
 
+
 // $router->get('/admin', function () {
 //     return "View Admin";
 // });
+$router->filter('admin', function(){
+    if(!isset($_SESSION['user']) || $_SESSION['user']->role !='admin')
+    {
+        echo "<script>alert('Bạn không có quyền truy cập vào trang này!');</script>";
+         redirect('');
+    }
+});
 $router->group(['before'=>'admin'], function($router){
     $router->group(['prefix' => 'admin'], function ($router) {
          //danh mục

@@ -19,9 +19,29 @@
 
         
     </div>
+    <div class="w-full md:w-1/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Danh mục</h3>
+        <ul class="space-y-2">
+            <li>
+                <a href="{{ APP_URL . 'sanpham' }}" 
+                   class="block p-2 rounded {{ !isset($categoryID) ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-100' }}">
+                    Tất cả sản phẩm
+                </a>
+            </li>
+            @foreach ($categories as $category)
+            <li>
+                <a href="{{ APP_URL . 'sanpham?category_id=' . $category->id }}" 
+                   class="block p-2 rounded {{ isset($categoryID) && $categoryID == $category->id ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-100' }}">
+                    {{ $category->category_name }}
+                </a>
+            </li>
+            @endforeach
+        </ul>
+    </div>
+        <!-- hiển thị thông báo-->
     @if(isset($message) && $message != '')
     <p class="text-lg font-semibold text-blue-500">{{ $message }}</p>
-@endif
+    @endif
     <!-- Hiển thị sản phẩm -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         @foreach ($products as $product)

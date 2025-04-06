@@ -23,9 +23,17 @@
                
             </ul>
         </aside>
-
+           
         <!-- Nội dung chính -->
         <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">
+            @if(isset($_SESSION['user']) && $_SESSION['user']->role =='admin')
+            <div class="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+                  <strong>Xin chào,{{$_SESSION['user']->username}}</strong>
+                  <br>
+                  <a href="{{APP_URL}}"class="text-blue-500 hover:underline">Quay về Trang chủ</a>
+
+            </div>
+            @endif
             <!-- Nội dung  -->
             @yield('content')
             <!-- End Nội dung -->

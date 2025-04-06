@@ -38,18 +38,33 @@
  <div class="mt-12 border-t pt-6">
  <h3 class="text-2xl font-bold text-gray-800">Bình luận</h3>
  <div class="mt-4 space-y-4">
+ <?php $__currentLoopData = $reviews; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $review): $loop = $this->incrementLoopIndices();  ?>
  <div class="p-4 border rounded-lg shadow-sm">
- <p class="text-gray-700"><strong>Admin:</strong> Laptop rất tốt, pin trâu, hiệu năng mạnh.</p>
- <p class="text-sm text-gray-500">★★★★★</p>
+ <p class="text-gray-700"><strong><?php echo \htmlentities($review->user->username??'', ENT_QUOTES, 'UTF-8', false); ?></strong>
+ <p class="text-sm text-gray-500"><?php echo \htmlentities($review->rating??'', ENT_QUOTES, 'UTF-8', false); ?>⭐</p>
+ <?php echo \htmlentities($review->review_text??'', ENT_QUOTES, 'UTF-8', false); ?></p>
+ <p class="text-sm text-gray-500"><?php echo \htmlentities($review->created_at??'', ENT_QUOTES, 'UTF-8', false); ?></p>
  </div>
- <div class="p-4 border rounded-lg shadow-sm">
- <p class="text-gray-700"><strong>Người dùng:</strong> Thiết kế đẹp, màn hình sắc nét.</p>
- <p class="text-sm text-gray-500">★★★★☆</p>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </div>
- <div class="p-4 border rounded-lg shadow-sm">
- <p class="text-gray-700"><strong>Khách hàng:</strong> Giá hơi cao nhưng đáng tiền.</p>
- <p class="text-sm text-gray-500">★★★★☆</p>
- </div>
+
+ <!-- Form đánh giá -->
+ <div class="mt-8">
+ <h3 class="text-xl font-semibold text-gray-800">Đánh giá sản phẩm của bạn</h3>
+ <form action="<?php echo \htmlentities(APP_URL .'reviews/store'??'', ENT_QUOTES, 'UTF-8', false); ?>" method="POST" class="mt-4">
+ <input type="hidden" name="product_id" value="<?php echo \htmlentities($product->id??'', ENT_QUOTES, 'UTF-8', false); ?>" >
+ <textarea name="review_text" rows="3" class="w-full p-2 border rounded" placeholder="Viết bình luận..."></textarea>
+ <label for="rating" class="block mt-2">Đánh giá:</label>
+ <select name="rating" id="rating" class="border p-2 rounded">
+ <option value="5">⭐⭐⭐⭐⭐</option>
+ <option value="4">⭐⭐⭐⭐</option>
+ <option value="3">⭐⭐⭐</option>
+ <option value="2">⭐⭐</option>
+ <option value="1">⭐</option>
+ </select>
+ <button type="submit" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Gửi</button>
+ </form>
  </div>
  </div>
 </div>

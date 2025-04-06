@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,6 +21,41 @@
             <span class="material-symbols-outlined">search</span>
             <span class="material-symbols-outlined">favorite</span>
             <span class="material-symbols-outlined">shopping_cart</span>
+            @if(isset($_SESSION['user']))
+    <div x-data="{ open: false }" class="relative flex items-center gap-4">
+        <strong class="text-gray-700">Xin chào {{ $_SESSION['user']->username }}</strong>
+
+        <!-- Nút mở menu -->
+        <button @click="open = !open" class="text-2xl text-gray-600 focus:outline-none">
+            <span class="material-symbols-outlined">account_circle</span>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div 
+        x-show="open"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 transform scale-95"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="opacity-100 transform scale-100"
+        x-transition:leave-end="opacity-0 transform scale-95"
+            @click.away="open = false"
+            class="absolute right-0 mt-8 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50"
+        >
+            <a href="{{ APP_URL .'profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                Quản lý tài khoản
+            </a>
+            <a href="{{ APP_URL . 'logout' }}" class="block px-4 py-2 text-sm text-red-500 hover:bg-red-100">
+                Đăng xuất
+            </a>
+
+        </div>
+    </div>
+@else
+    <a href="{{ APP_URL . 'login' }}" class="text-blue-600 font-medium hover:underline">Đăng nhập</a>
+@endif
+
+            
         </div>
     </section>
     <!--End Header-->

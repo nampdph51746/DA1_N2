@@ -212,4 +212,7 @@ public function orderBy($column, $direction = "ASC")
     $this->sqlBuilder .= " ORDER BY `$column` $direction";
     return $this;
 }
+
+
+
 }
