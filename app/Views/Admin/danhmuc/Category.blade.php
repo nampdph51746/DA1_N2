@@ -1,5 +1,9 @@
 @extends('Admin.layoutadmin')
+<<<<<<< HEAD
+@section('title','danh muc san pham')
+=======
 @section('title','Danh sách danh mục')
+>>>>>>> c75c26ae0461b1967aa5ecfee11482330c96b269
 
 @section('content')
 <main class="flex-1 p-6 bg-white shadow-lg rounded-lg mx-auto">

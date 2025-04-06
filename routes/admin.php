@@ -2,8 +2,7 @@
 use App\Controllers\Admin\CategoryController;
 use App\Controllers\Admin\ProductController;
 use App\Controllers\Admin\ProductVariantController;
-use App\Controllers\Admin\UserController;
-
+use App\Controllers\Admin\UserController;  // Đã giữ lại phần này
 
 // $router->get('/admin', function () {
 //     return "View Admin";
@@ -12,7 +11,7 @@ $router->filter('admin', function(){
     if(!isset($_SESSION['user']) || $_SESSION['user']->role !='admin')
     {
         echo "<script>alert('Bạn không có quyền truy cập vào trang này!');</script>";
-         redirect('');
+        redirect('');
     }
 });
 $router->group(['before'=>'admin'], function($router){
@@ -34,7 +33,7 @@ $router->group(['before'=>'admin'], function($router){
         $router->get('products/delete/{id}',[ProductController::class,'destroy']);
         $router->get('products/detail/{id}',[ProductController::class,'detail']);
         $router->get('products/search', [ProductController::class,'search']);
-        //users
+        // users
         $router->get('users',[UserController::class,'index']);
         $router->get('users/search',[UserController::class,'search']);
         // Biến thể
