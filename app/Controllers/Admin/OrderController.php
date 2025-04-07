@@ -1,14 +1,11 @@
 <?php
 namespace App\Controllers\Admin;
-use App\Models\Category;
 use App\Models\Order;
-use App\Models\User;
 use App\Models\Product;
 use App\Models\Order_Item;
-use App\Models\Cart_Item;
-use App\Models\Cart;
-use App\Models\Product_Variant;
 use eftec\bladeone\BladeOne;
+use App\Models\Product_Variant;
+
 class OrderController {
     public function index(){
         $orders = Order::select(['orders.*', 'users.full_name', "(SELECT GROUP_CONCAT(product_variants.variant_name, ' ',product_variants.color SEPARATOR ', ') 
@@ -45,27 +42,75 @@ class OrderController {
     public function detail($id){
         $id = (int)$id;
         $order = Order::select(['orders.*'])
-        // ->join('users', 'users.id', 'orders.user_id')
         ->where('id', '=', $id)
         ->first();
-        $order->full_name = $_GET['full_name'];
-        // echo $order->getSql();
-        // exit;
+        if(!$order){
+            return redirect('/admin/orders');
+        }
 
-        $variants = Product_Variant::select(['product_variants.*'])
-        ->join('order_items', 'order_items.variant_id', 'product_variants.id')
-        // ->where('id', '=', $id);
+        $orderItems = Order_Item::select(['order_items.*'])
+        ->where('order_id', '=', $id)
         ->get();
-        // echo $variants->getSql();
-        // exit;
 
-        // $variants = Product_Variant::where('order_id', '=', $id)->get();
+        $items = [];
+        if(!empty($orderItems)){
+            $variantIds = [];
+            foreach($orderItems as $item){
+                $variantIds[] = $item->variant_id;
+            }
+
+            $variants = [];
+            foreach($variantIds as $varriantId){
+                $variant = Product_Variant::select(['product_variants.*'])
+                ->where('id', '=', $varriantId)
+                ->first();
+                if($variant){
+                    $variants[]=$variant;
+                }
+            }
+    
+            $varriantMap = array_column($variants, null, 'id');
+    
+            // $productIds = [];
+            // foreach($variants as $variant){
+            //     $productIds[]=$variant->product_id;
+            // }
+    
+            // $products = [];
+            // foreach($productIds as $productId){
+            //     $product = Product::select(['product.*'])
+            //     ->where('id', '=', $productId)
+            //     ->first();
+            //     if($product){
+            //         $products[]=$product;
+            //     }
+            // }
+            // $productMap = array_column($products, null, 'id');
+    
+            foreach($orderItems as $item){
+                $variant = $varriantMap[$item->variant_id] ?? null;
+    
+                $items[] = [
+                    'variant_name' => $variant ? $variant->variant_name : 'Unknown',
+                    'color' => $item->color,
+                    'image_url' => $variant && $variant->image_url ? APP_URL . $variant->image_url : APP_URL. '/images/default.png',
+                    'price' => $item->price,
+                    'quantity' => $item->quantity
+                ];
+            }
+        }
+
+        $totalQuantity = array_sum(array_column($orderItems, 'quantity'));
 
         $views = __DIR__."/../../views";
         $cache = __DIR__."/../../cache";
         $blade =  new BladeOne($views, $cache, BladeOne::MODE_AUTO);
         // var_dump($product, $variants);
-        return $blade->run("Admin.order.detail", compact("order", "variants"));
+        return $blade->run("Admin.order.detail", [
+            'order' => $order,
+            'items' => $items,
+            'totalQuantity' => $totalQuantity
+        ]);
     }
 
     public function search(){

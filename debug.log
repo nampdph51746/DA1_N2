@@ -1,0 +1,681 @@
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+Variant IDs: [2,3]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":9,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-05 10:12:39"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":10,"created_at":"2025-03-22 15:43:06","updated_at":"2025-03-25 14:08:21"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 4
+    [user_id] => 2
+    [created_at] => 2025-04-06 17:54:34
+    [updated_at] => 2025-04-06 17:54:34
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 32
+            [cart_id] => 4
+            [variant_id] => 2
+            [color] => White
+            [quantity] => 1
+            [price] => 15000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 33
+            [cart_id] => 4
+            [variant_id] => 3
+            [color] => Red
+            [quantity] => 2
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 45000000
+Discount: 1000000.00, Total Price: 44000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 44000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [discount_id] => 
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 28
+    [user_id] => 2
+    [total_price] => 44000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-08 00:04:41
+    [updated_at] => 2025-04-08 00:04:41
+    [discount_id] => 
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Added Order_Item for variant_id: 2
+Variant for variant_id 2: stdClass Object
+(
+    [id] => 2
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => White
+    [price] => 15000000
+    [image_url] => images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+    [stock] => 9
+    [created_at] => 2025-03-22 15:39:31
+    [updated_at] => 2025-04-05 10:12:39
+)
+
+Updated stock for variant_id 2 to 8
+Added Order_Item for variant_id: 3
+Variant for variant_id 3: stdClass Object
+(
+    [id] => 3
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => Red
+    [price] => 15000000
+    [image_url] => images/A1NX.GTHEK.002_1_supersize.jpg
+    [stock] => 10
+    [created_at] => 2025-03-22 15:43:06
+    [updated_at] => 2025-03-25 14:08:21
+)
+
+Updated stock for variant_id 3 to 8
+Deleted Cart_Item with id: 32
+Deleted Cart_Item with id: 33
+Deleted Cart with id: 4
+Variant IDs: [7]
+Variants: [{"id":7,"product_id":4,"variant_name":"Asus Vivobook 15","color":"White","price":16000000,"image_url":"images\/Vivo White.jpg","stock":10,"created_at":"2025-03-27 16:43:50","updated_at":"2025-03-27 16:43:50"}]
+Variant Map: {"7":{"id":7,"product_id":4,"variant_name":"Asus Vivobook 15","color":"White","price":16000000,"image_url":"images\/Vivo White.jpg","stock":10,"created_at":"2025-03-27 16:43:50","updated_at":"2025-03-27 16:43:50"}}
+Item: variant_id=7, name=Asus Vivobook 15, image=images/Vivo White.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 5
+    [user_id] => 2
+    [created_at] => 2025-04-07 17:18:27
+    [updated_at] => 2025-04-07 17:18:27
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 34
+            [cart_id] => 5
+            [variant_id] => 7
+            [color] => White
+            [quantity] => 2
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 32000000
+Discount: 0, Total Price: 32000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 32000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [discount_id] => 
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 29
+    [user_id] => 2
+    [total_price] => 32000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-08 00:18:40
+    [updated_at] => 2025-04-08 00:18:40
+    [discount_id] => 
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Added Order_Item for variant_id: 7
+Variant for variant_id 7: stdClass Object
+(
+    [id] => 7
+    [product_id] => 4
+    [variant_name] => Asus Vivobook 15
+    [color] => White
+    [price] => 16000000
+    [image_url] => images/Vivo White.jpg
+    [stock] => 10
+    [created_at] => 2025-03-27 16:43:50
+    [updated_at] => 2025-03-27 16:43:50
+)
+
+Updated stock for variant_id 7 to 8
+Deleted Cart_Item with id: 34
+Deleted Cart with id: 5
+Variant IDs: [8,7]
+Variants: [{"id":8,"product_id":4,"variant_name":"Asus Vivobook 15","color":"Black","price":16000000,"image_url":"images\/Vivo Black.jpeg","stock":10,"created_at":"2025-03-27 16:44:26","updated_at":"2025-03-27 16:44:26"},{"id":7,"product_id":4,"variant_name":"Asus Vivobook 15","color":"White","price":16000000,"image_url":"images\/Vivo White.jpg","stock":8,"created_at":"2025-03-27 16:43:50","updated_at":"2025-04-08 00:18:40"}]
+Variant Map: {"8":{"id":8,"product_id":4,"variant_name":"Asus Vivobook 15","color":"Black","price":16000000,"image_url":"images\/Vivo Black.jpeg","stock":10,"created_at":"2025-03-27 16:44:26","updated_at":"2025-03-27 16:44:26"},"7":{"id":7,"product_id":4,"variant_name":"Asus Vivobook 15","color":"White","price":16000000,"image_url":"images\/Vivo White.jpg","stock":8,"created_at":"2025-03-27 16:43:50","updated_at":"2025-04-08 00:18:40"}}
+Item: variant_id=8, name=Asus Vivobook 15, image=images/Vivo Black.jpeg
+Item: variant_id=7, name=Asus Vivobook 15, image=images/Vivo White.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=bank
+Cart: stdClass Object
+(
+    [id] => 6
+    [user_id] => 2
+    [created_at] => 2025-04-07 17:54:51
+    [updated_at] => 2025-04-07 17:54:51
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 35
+            [cart_id] => 6
+            [variant_id] => 8
+            [color] => Black
+            [quantity] => 2
+            [price] => 16000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 36
+            [cart_id] => 6
+            [variant_id] => 7
+            [color] => White
+            [quantity] => 4
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 96000000
+Discount: 48000000, Total Price: 48000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 48000000
+    [payment_method] => bank
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [discount_id] => 
+)
+
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 6
+    [user_id] => 2
+    [created_at] => 2025-04-07 17:54:51
+    [updated_at] => 2025-04-07 17:54:51
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 35
+            [cart_id] => 6
+            [variant_id] => 8
+            [color] => Black
+            [quantity] => 2
+            [price] => 16000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 36
+            [cart_id] => 6
+            [variant_id] => 7
+            [color] => White
+            [quantity] => 4
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 96000000
+Discount: 48000000, Total Price: 48000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 48000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [discount_id] => 
+)
+
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 6
+    [user_id] => 2
+    [created_at] => 2025-04-07 17:54:51
+    [updated_at] => 2025-04-07 17:54:51
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 35
+            [cart_id] => 6
+            [variant_id] => 8
+            [color] => Black
+            [quantity] => 2
+            [price] => 16000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 36
+            [cart_id] => 6
+            [variant_id] => 7
+            [color] => White
+            [quantity] => 4
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 96000000
+Discount: 48000000, Total Price: 48000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 48000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 30
+    [user_id] => 2
+    [total_price] => 48000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-08 00:56:19
+    [updated_at] => 2025-04-08 00:56:19
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Added Order_Item for variant_id: 8
+Variant for variant_id 8: stdClass Object
+(
+    [id] => 8
+    [product_id] => 4
+    [variant_name] => Asus Vivobook 15
+    [color] => Black
+    [price] => 16000000
+    [image_url] => images/Vivo Black.jpeg
+    [stock] => 10
+    [created_at] => 2025-03-27 16:44:26
+    [updated_at] => 2025-03-27 16:44:26
+)
+
+Updated stock for variant_id 8 to 8
+Added Order_Item for variant_id: 7
+Variant for variant_id 7: stdClass Object
+(
+    [id] => 7
+    [product_id] => 4
+    [variant_name] => Asus Vivobook 15
+    [color] => White
+    [price] => 16000000
+    [image_url] => images/Vivo White.jpg
+    [stock] => 8
+    [created_at] => 2025-03-27 16:43:50
+    [updated_at] => 2025-04-08 00:18:40
+)
+
+Updated stock for variant_id 7 to 4
+Deleted Cart_Item with id: 35
+Deleted Cart_Item with id: 36
+Deleted Cart with id: 6
+Variant IDs: [9]
+Variants: [{"id":9,"product_id":6,"variant_name":"Acer Nitro 5","color":"Red","price":20000000,"image_url":"images\/Acer Nitro 5.jpg","stock":10,"created_at":"2025-04-05 11:04:08","updated_at":"2025-04-05 11:04:08"}]
+Variant Map: {"9":{"id":9,"product_id":6,"variant_name":"Acer Nitro 5","color":"Red","price":20000000,"image_url":"images\/Acer Nitro 5.jpg","stock":10,"created_at":"2025-04-05 11:04:08","updated_at":"2025-04-05 11:04:08"}}
+Item: variant_id=9, name=Acer Nitro 5, image=images/Acer Nitro 5.jpg
+User: stdClass Object
+(
+    [id] => 5
+    [username] => hieunn
+    [password] => $2y$10$CcXxC2MpreWRV/eCW6RYT.I3Uohtw1AbtY02AK2yTa/r19jJcsaoO
+    [full_name] => Nguyễn Ngọc Hiếu
+    [email] => hieunn@gmail.com
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+    [role] => customer
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-08 00:57:22
+    [updated_at] => 2025-04-08 00:57:22
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=bank
+Cart: stdClass Object
+(
+    [id] => 7
+    [user_id] => 5
+    [created_at] => 2025-04-07 17:58:08
+    [updated_at] => 2025-04-07 17:58:08
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 37
+            [cart_id] => 7
+            [variant_id] => 9
+            [color] => Red
+            [quantity] => 2
+            [price] => 20000000.00
+        )
+
+)
+
+Subtotal: 40000000
+Discount: 20000000, Total Price: 20000000
+Order Data: Array
+(
+    [user_id] => 5
+    [total_price] => 20000000
+    [payment_method] => bank
+    [status] => pending
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 31
+    [user_id] => 5
+    [total_price] => 20000000.00
+    [payment_method] => bank
+    [status] => pending
+    [created_at] => 2025-04-08 00:58:44
+    [updated_at] => 2025-04-08 00:58:44
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Added Order_Item for variant_id: 9
+Variant for variant_id 9: stdClass Object
+(
+    [id] => 9
+    [product_id] => 6
+    [variant_name] => Acer Nitro 5
+    [color] => Red
+    [price] => 20000000
+    [image_url] => images/Acer Nitro 5.jpg
+    [stock] => 10
+    [created_at] => 2025-04-05 11:04:08
+    [updated_at] => 2025-04-05 11:04:08
+)
+
+Updated stock for variant_id 9 to 8
+Deleted Cart_Item with id: 37
+Deleted Cart with id: 7

@@ -88,19 +88,6 @@
                                 <span class="text-base leading-none">🔍</span>
                                 <span class="leading-none">Chi tiết</span>
                             </a>
-                            @if ($order->status !== 'delivered' && $order->status !== 'cancelled')
-                                <!-- <form action="orders/update-status" method="POST">
-                                    <input type="hidden" name="order_id" value="{{$order->id}}">
-
-                                    @if ($order->status !== 'paid' && $order->status !== 'shipped')
-                                        <button type="submit" name="action" value="cancel"
-                                            class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition text-sm inline-flex items-center gap-1 h-8">
-                                            <span class="text-base leading-none">❌</span>
-                                            <span class="leading-none">Hủy đơn</span>
-                                        </button>
-                                    @endif
-                                </form> -->
-                            @endif
                     </td>
                 </tr>
                 @endforeach

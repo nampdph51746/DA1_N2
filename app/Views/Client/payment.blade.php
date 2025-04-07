@@ -1,0 +1,130 @@
+@extends('Client.layout')
+
+@section('content')
+<div class="container max-w-screen-xl mx-auto my-8 grid grid-cols-12 gap-8">
+    <!-- THÔNG TIN KHÁCH HÀNG -->
+    <div class="col-span-8 bg-white p-8 rounded shadow-md">
+        <h2 class="text-2xl font-semibold mb-6">Thông tin thanh toán</h2>
+
+        <form method="POST" action="{{ APP_URL }}/place-order" id="checkout-form">
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Họ tên</label>
+                    <input type="text" name="fullname" required class="w-full p-2 border rounded" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Số điện thoại</label>
+                    <input type="text" name="phone" required class="w-full p-2 border rounded" />
+                </div>
+                <div class="col-span-2">
+                    <label class="block text-sm font-medium mb-1">Địa chỉ giao hàng</label>
+                    <input type="text" name="address" required class="w-full p-2 border rounded" />
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold mb-4">Phương thức thanh toán</h3>
+            <div class="mb-6">
+                <label class="block mb-2">
+                    <input type="radio" name="payment_method" value="cod" checked />
+                    Thanh toán khi nhận hàng (COD)
+                </label>
+                <label class="block">
+                    <input type="radio" name="payment_method" value="bank" />
+                    Chuyển khoản ngân hàng
+                </label>
+            </div>
+
+            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded text-lg font-semibold">
+                Xác nhận đặt hàng
+            </button>
+        </form>
+    </div>
+
+    <!-- TÓM TẮT ĐƠN HÀNG -->
+    <div class="col-span-4 bg-neutral-100 p-8 rounded">
+        <h2 class="font-semibold text-2xl mb-4">Tóm tắt đơn hàng</h2>
+        <hr class="mb-4" />
+
+        @forelse($cart as $item)
+        <div class="flex justify-between items-center mb-3">
+            <div>
+                <p class="font-medium">{{ $item->name }}</p>
+                <p class="text-sm text-gray-500">Màu: {{ $item->color }} | SL: {{ $item->quantity }}</p>
+            </div>
+            <span class="text-sm">{{ number_format($item->price * $item->quantity, 0, ',', '.') }} đ</span>
+        </div>
+        @empty
+        <p class="text-gray-500">Giỏ hàng trống</p>
+        @endforelse
+
+        <hr class="my-4" />
+
+        <?php
+            $subtotal = 0;
+            foreach ($cart as $item) {
+                $subtotal += $item->price * $item->quantity; // Sửa $item['price'] thành $item->price
+            }
+            $discount = $_SESSION['applied_voucher']['discount'] ?? 0;
+            $total = max($subtotal - $discount, 0);
+        ?>
+
+        <div class="flex justify-between mb-2">
+            <span>Tạm tính:</span>
+            <span>{{ number_format($subtotal, 0, ',', '.') }} đ</span>
+        </div>
+
+        <div class="flex justify-between mb-2">
+            <span>Giảm giá:</span>
+            <span class="text-red-500">-{{ number_format($discount, 0, ',', '.') }} đ</span>
+        </div>
+
+        <div class="flex justify-between text-lg font-semibold mt-4">
+            <span>Tổng cộng:</span>
+            <span class="text-green-600">{{ number_format($total, 0, ',', '.') }} đ</span>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('checkout-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        console.log('Form action URL:', this.action); // Log URL để kiểm tra
+        console.log('Form data:', Object.fromEntries(formData)); // Log dữ liệu gửi đi
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            console.log('Response status:', response.status); // Log mã trạng thái
+            console.log('Response headers:', response.headers.get('Content-Type')); // Log loại nội dung
+            if (!response.ok) {
+                throw new Error('Request failed with status: ' + response.status);
+            }
+            return response.text(); // Dùng text() thay vì json() để xem nguyên văn
+        })
+        .then(text => {
+            console.log('Raw response:', text); // Log phản hồi thô
+            try {
+                const data = JSON.parse(text); // Thử parse thành JSON
+                if (data.success) {
+                    alert(data.message);
+                    window.location.href = data.redirect;
+                } else {
+                    alert(data.message + (data.debug ? ' - ' + data.debug : ''));
+                }
+            } catch (e) {
+                console.error('Parse JSON error:', e);
+                alert('Có lỗi xảy ra khi xử lý phản hồi từ server');
+            }
+        })
+        .catch(error => {
+            console.error('Fetch error:', error); // Log lỗi nếu fetch thất bại
+            alert('Không thể gửi yêu cầu đặt hàng: ' + error.message);
+        });
+    });
+});
+</script>
+@endsection

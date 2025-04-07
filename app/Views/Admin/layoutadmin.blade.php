@@ -19,8 +19,9 @@
                 <li><a href="{{APP_URL . 'admin/products'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>📦</span> <span class="ml-3">Sản phẩm</span></a></li>
                 <li><a href="{{APP_URL . 'admin/categories'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>📂</span> <span class="ml-3">Danh mục</span></a></li>
                 <li><a href="{{APP_URL .'admin/users'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>👤</span> <span class="ml-3">Người dùng</span></a></li>
-                <li><a href="" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>🛒</span> <span class="ml-3">Đơn hàng</span></a></li>
-               
+                <li><a href="{{APP_URL .'admin/orders'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>🛒</span> <span class="ml-3">Đơn hàng</span></a></li>
+                <li><a href="{{APP_URL .'admin/reviews'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>💬</span> <span class="ml-3">Bình luận</span></a></li>
+                <li><a href="{{APP_URL .'admin/vouchers'}}" class="flex items-center p-2 hover:bg-blue-800 rounded"><span>🏷️</span> <span class="ml-3">Voucher</span></a></li>
             </ul>
         </aside>
 

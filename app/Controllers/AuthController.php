@@ -1,36 +1,67 @@
 <?php 
 namespace App\Controllers;
 
+use Exception;
+use App\Models\Cart;
 use App\Models\User;
+use App\Models\Cart_Item;
+use App\Models\Product_Variant;
 
 class AuthController {
     public function  login(){
         
        return view('Auth.login');
     }
-    public function postLogin(){
-        $data= $_POST;
-        if(trim($data['username'])=="" || trim($data['password'])==""){
-            $errors['message']="Usename và mật khẩu phải nhập";
+    public function postLogin()
+    {
+        // Khởi tạo session nếu chưa có
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
         }
-        if(isset($errors)){
-            return view('Auth.login',compact('data', 'errors'));
+    
+        $data = $_POST;
+        $errors = [];
+    
+        // Kiểm tra dữ liệu đầu vào
+        if (trim($data['username'] ?? '') == "" || trim($data['password'] ?? '') == "") {
+            $errors['message'] = "Username và mật khẩu phải nhập";
         }
-        $user = User::where('username','=',$data['username'])->first();
-        if(!$user){
-            $errors['message'] ="Username hoặc mật khẩu không chính xác";
-        }else{
-            if(password_verify($data['password'],$user->password)){
-                $_SESSION['user']=$user;
-                return redirect('');
-            }else{
-                $errors['message'] ="Username hoặc mật khẩu không chính xác";
+    
+        if (!empty($errors)) {
+            return view('Auth.login', compact('data', 'errors'));
+        }
+    
+        // Tìm user trong database
+        $user = User::where('username', '=', $data['username'])->first();
+        if (!$user) {
+            $errors['message'] = "Username hoặc mật khẩu không chính xác";
+        } else {
+            // Kiểm tra mật khẩu
+            if (password_verify($data['password'], $user->password)) {
+                // Lưu user vào session
+                $_SESSION['user'] = $user;
+    
+                // Đồng bộ giỏ hàng
+                try {
+                    $this->syncCartWithDatabase($user->id);
+                } catch (Exception $e) {
+                    // Nếu có lỗi khi đồng bộ giỏ hàng, ghi log và tiếp tục
+                    error_log("Lỗi đồng bộ giỏ hàng: " . $e->getMessage());
+                }
+    
+                // Chuyển hướng sau khi đăng nhập thành công
+                header('Location: ' . APP_URL);
+                exit;
+            } else {
+                $errors['message'] = "Username hoặc mật khẩu không chính xác";
             }
         }
-        if(isset($errors)){
-            return view('Auth.login',compact('data', 'errors'));
+    
+        if (!empty($errors)) {
+            return view('Auth.login', compact('data', 'errors'));
         }
     }
+
     public function  register(){
         return view('Auth.register');
     }
@@ -95,4 +126,63 @@ class AuthController {
         return redirect('login');
     }
     
+    private function syncCartWithDatabase($userId)
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+    
+        $sessionCart = $_SESSION['cart'] ?? [];
+    
+        if (empty($sessionCart)) {
+            return; 
+        }
+    
+        $cart = Cart::where('user_id', '=', $userId)->first();
+        if (!$cart) {
+            Cart::create([
+                'user_id' => $userId,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+    
+            $cart = Cart::where('user_id', '=', $userId)->first();
+            if (!$cart) {
+                throw new Exception("Không thể tạo hoặc lấy giỏ hàng cho user_id: $userId");
+            }
+        }
+    
+        foreach ($sessionCart as $cartKey => $item) {
+            list($productId, $color) = explode('-', $cartKey);
+    
+            $cartItem = Cart_Item::where('cart_id', '=', $cart->id)
+                ->where('product_id', '=', $productId)
+                ->where('color', '=', $color)
+                ->first();
+    
+            if ($cartItem) {
+                $cartItem->quantity += $item['quantity'];
+                $cartItem->save();
+            } else {
+                Cart_Item::create([
+                    'cart_id' => $cart->id,
+                    'product_id' => $productId,
+                    'color' => $color,
+                    'quantity' => $item['quantity'],
+                    'price' => $item['price'],
+                ]);
+            }
+    
+            $variant = Product_Variant::where('product_id', '=', $productId)
+                ->where('color', '=', $color)
+                ->first();
+    
+            if ($variant && $cartItem->quantity > $variant->stock) {
+                $cartItem->quantity = $variant->stock; 
+                $cartItem->save();
+            }
+        }
+    
+        unset($_SESSION['cart']);
+    }
 }

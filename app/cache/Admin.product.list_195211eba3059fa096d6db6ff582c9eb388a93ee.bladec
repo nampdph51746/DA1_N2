@@ -32,11 +32,52 @@
  </button>
  <button type="submit" class="bg-gray-500 text-white px-5 py-2 rounded-full text-sm hover:bg-gray-600 transition">
  Reset
+ <form action="<?php echo \htmlentities(APP_URL . 'admin/products/search'??'', ENT_QUOTES, 'UTF-8', false); ?>" method="GET" class="justify-center my-2">
+ <div class="grid grid-cols-3 gap-4 bg-white shadow-sm rounded-lg p-4 border border-gray-300">
+ <!-- ID -->
+ <input type="text" name="id" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="ID">
+ 
+ <!-- Tên sản phẩm -->
+ <input type="text" name="product_name" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="Tên sản phẩm">
+ 
+ <!-- Giá -->
+ <input type="number" name="price" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="Giá">
+
+ <!-- Danh mục -->
+ <select name="category_id" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
+ <option value="">Chọn danh mục</option>
+ <?php $__currentLoopData = $categories; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $category): $loop = $this->incrementLoopIndices();  ?>
+ <option value="<?php echo \htmlentities($category->id??'', ENT_QUOTES, 'UTF-8', false); ?>"><?php echo \htmlentities($category->category_name??'', ENT_QUOTES, 'UTF-8', false); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+
+ <!-- Ngày tạo -->
+ <input type="date" name="created_at" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
+
+ <!-- Ngày cập nhật -->
+ <input type="date" name="updated_at" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
+
+ <!-- Trạng thái -->
+ <select name="status" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
+ <option value="">Tất cả trạng thái</option>
+ <option value="Active">Hoạt động</option>
+ <option value="Deactive">Không hoạt động</option>
+ </select>
+
+ <!-- Nút tìm kiếm -->
+ <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded text-sm hover:bg-blue-600 transition">
+ Tìm
+ </button>
+
+ <!-- Nút làm mới -->
+ <button type="reset" class="bg-gray-400 text-white px-4 py-1 rounded text-sm hover:bg-gray-500 transition">
+ Làm mới
  </button>
  </div>
  </div>
  </form>
- 
+ <!-- </form> -->
  <div class="mt-4 text-left text-xl">
  <a href="<?php echo \htmlentities(APP_URL . 'admin/products/create'??'', ENT_QUOTES, 'UTF-8', false); ?>" class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition">
  ➕ Thêm sản phẩm
@@ -57,6 +98,7 @@
  <th class="border border-gray-300 px-4 py-2">Ngày Tạo</th>
  <th class="border border-gray-300 px-4 py-2">Ngày Cập Nhật</th>
  <th class="border border-gray-300 px-4 py-2">Mô tả</th>
+ <th class="border border-gray-300 px-4 py-2">Trạng thái</th>
  <th class="border border-gray-300 px-4 py-2">Hành động</th>
  </tr>
  </thead>
@@ -83,9 +125,14 @@
  <td class="border border-gray-300 px-4 py-2"><?php echo \htmlentities($product->updated_at??'', ENT_QUOTES, 'UTF-8', false); ?></td>
  <td class="border border-gray-300 px-4 py-2"><?php echo \htmlentities($product->description??'', ENT_QUOTES, 'UTF-8', false); ?></td>
  <?php /* <td class="border border-gray-300 px-4 py-2"><?php echo \htmlentities($product->description??'', ENT_QUOTES, 'UTF-8', false); ?></td> */ ?>
+ <td class="border border-gray-300 px-4 py-2 
+ <?php echo \htmlentities($product->status === 'Đang bán' ? 'text-green-600 font-bold' : 'text-red-600 font-bold'??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ <?php echo \htmlentities($product->status??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </td>
  <td class="border border-gray-300 px-10 py-2 text-center">
  <div class="flex justify-center items-center gap-1">
- <a href="<?php echo \htmlentities(APP_URL. 'admin/products/detail/'.$product->id??'', ENT_QUOTES, 'UTF-8', false); ?>" 
+ <a href="<?php echo \htmlentities(APP_URL . 'admin/products/detail/' . $product->id . '?cate_name=' . urlencode($product->cate_name)??'', ENT_QUOTES, 'UTF-8', false); ?>" 
  class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition text-sm inline-flex items-center gap-1 h-8">
  <span class="text-base leading-none">🔍</span>
  <span class="leading-none">Chi tiết</span>

@@ -40,14 +40,13 @@ class BaseModel
      */
     public static function create($data)
     {
-        $model =  new static;
+        $model = new static;
         $sql = "INSERT INTO $model->tableName(";
         $values = "VALUES(";
         foreach ($data as $column => $val) {
             $sql .= "`$column`, ";
             $values .= ":$column, ";
         }
-
         $sql = rtrim($sql, ', ') . ") " . rtrim($values, ', ') . ")";
         $stmt = $model->conn->prepare($sql);
         $stmt->execute($data);
