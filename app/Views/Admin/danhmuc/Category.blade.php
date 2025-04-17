@@ -49,7 +49,7 @@
               <tr class="hover:bg-gray-100">
                   <td class="border border-gray-300 px-4 py-2 text-center">{{$cate->id}}</td>
                   <td class="border border-gray-300 px-4 py-2 text-center"> {{$cate->category_name}}</td>
-                  <td class="border border-gray-300 px-4 py-2">
+                  <td class="border border-gray-300 px-4 py-2 text-center">
                         <span class="font-semibold px-2 py-1 rounded 
                             {{ $cate->category_status == 'Đang kinh doanh' ? 'text-green-600 font-bold text-center' : 'text-red-600 font-bold text-center' }}">
                             {{ $cate->category_status }}
@@ -63,11 +63,11 @@
                           class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition">
                               ✏️ Sửa
                       </a>
-                      <!-- <a href="{{APP_URL . 'admin/categories/delete/'.$cate->id }}" 
+                      <a href="{{APP_URL . 'admin/categories/delete/'.$cate->id }}" 
                           onclick="return confirmDelete(event)"
                           class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition ml-2">
                               ❌ Xóa
-                      </a> -->
+                      </a>
                   </td>
               </tr>
               @endforeach

@@ -2,8 +2,10 @@
 namespace App\Controllers\Admin;
 use App\Models\Product;
 use App\Models\Category;
-use App\Models\Product_Variant;
 use eftec\bladeone\BladeOne;
+use App\Models\Product_Variant;
+use App\Services\Authorization;
+
 class ProductVariantController {
     public function create($id){
         $product = Product::find($id);
@@ -49,8 +51,13 @@ class ProductVariantController {
         return redirect("admin/products/detail/{$data['product_id']}");
     }
 
-    // public function destroy($id){
-    //    Product::delete($id);
-    //    return redirect("admin/products");
-    // }
+    public function destroy($id){
+        if(!Authorization::can('delete_any')){
+            header('HTTP/1.1 403 Forbidden');
+            echo "<script>alert('Bạn không có quyền xóa biến thể!'); window.history.back();</script>";
+            exit;
+        }
+       Product_Variant::delete($id);
+       return redirect("admin/products");
+    }
 }

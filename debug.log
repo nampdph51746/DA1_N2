@@ -679,3 +679,707 @@ Variant for variant_id 9: stdClass Object
 Updated stock for variant_id 9 to 8
 Deleted Cart_Item with id: 37
 Deleted Cart with id: 7
+Variant IDs: [5,4]
+Variants: [{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":10,"created_at":"2025-03-25 11:30:54","updated_at":"2025-03-25 14:08:40"},{"id":4,"product_id":2,"variant_name":"Acer Aspire 7","color":"Black","price":15000000,"image_url":"images\/Aspire-5-2022-A515-57-1024x639.png","stock":8,"created_at":"2025-03-22 15:53:17","updated_at":"2025-04-05 10:12:45"}]
+Variant Map: {"5":{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":10,"created_at":"2025-03-25 11:30:54","updated_at":"2025-03-25 14:08:40"},"4":{"id":4,"product_id":2,"variant_name":"Acer Aspire 7","color":"Black","price":15000000,"image_url":"images\/Aspire-5-2022-A515-57-1024x639.png","stock":8,"created_at":"2025-03-22 15:53:17","updated_at":"2025-04-05 10:12:45"}}
+Item: variant_id=5, name=Dell Inspiron 15, image=images/dell black.jpg
+Item: variant_id=4, name=Acer Aspire 7, image=images/Aspire-5-2022-A515-57-1024x639.png
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=bank
+Cart: stdClass Object
+(
+    [id] => 8
+    [user_id] => 2
+    [created_at] => 2025-04-08 03:58:39
+    [updated_at] => 2025-04-08 03:58:39
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 40
+            [cart_id] => 8
+            [variant_id] => 5
+            [color] => Black
+            [quantity] => 2
+            [price] => 15000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 41
+            [cart_id] => 8
+            [variant_id] => 4
+            [color] => Black
+            [quantity] => 1
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 45000000
+Discount: 22500000, Total Price: 22500000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 22500000
+    [payment_method] => bank
+    [status] => pending
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 32
+    [user_id] => 2
+    [total_price] => 22500000.00
+    [payment_method] => bank
+    [status] => pending
+    [created_at] => 2025-04-08 11:00:03
+    [updated_at] => 2025-04-08 11:00:03
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Added Order_Item for variant_id: 5
+Variant for variant_id 5: stdClass Object
+(
+    [id] => 5
+    [product_id] => 3
+    [variant_name] => Dell Inspiron 15
+    [color] => Black
+    [price] => 15000000
+    [image_url] => images/dell black.jpg
+    [stock] => 10
+    [created_at] => 2025-03-25 11:30:54
+    [updated_at] => 2025-03-25 14:08:40
+)
+
+Updated stock for variant_id 5 to 8
+Added Order_Item for variant_id: 4
+Variant for variant_id 4: stdClass Object
+(
+    [id] => 4
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => Black
+    [price] => 15000000
+    [image_url] => images/Aspire-5-2022-A515-57-1024x639.png
+    [stock] => 8
+    [created_at] => 2025-03-22 15:53:17
+    [updated_at] => 2025-04-05 10:12:45
+)
+
+Updated stock for variant_id 4 to 7
+Deleted Cart_Item with id: 40
+Deleted Cart_Item with id: 41
+Deleted Cart with id: 8
+Variant IDs: [6]
+Variants: [{"id":6,"product_id":3,"variant_name":"Dell Inspiron 15","color":"White","price":15000000,"image_url":"images\/dell white.jpg","stock":10,"created_at":"2025-03-25 11:31:02","updated_at":"2025-03-25 14:08:49"}]
+Variant Map: {"6":{"id":6,"product_id":3,"variant_name":"Dell Inspiron 15","color":"White","price":15000000,"image_url":"images\/dell white.jpg","stock":10,"created_at":"2025-03-25 11:31:02","updated_at":"2025-03-25 14:08:49"}}
+Item: variant_id=6, name=Dell Inspiron 15, image=images/dell white.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 9
+    [user_id] => 2
+    [created_at] => 2025-04-08 04:08:02
+    [updated_at] => 2025-04-08 04:08:02
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 42
+            [cart_id] => 9
+            [variant_id] => 6
+            [color] => White
+            [quantity] => 1
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 15000000
+Discount: 7500000, Total Price: 7500000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 7500000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 33
+    [user_id] => 2
+    [total_price] => 7500000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-08 11:09:33
+    [updated_at] => 2025-04-08 11:09:33
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Added Order_Item for variant_id: 6
+Variant for variant_id 6: stdClass Object
+(
+    [id] => 6
+    [product_id] => 3
+    [variant_name] => Dell Inspiron 15
+    [color] => White
+    [price] => 15000000
+    [image_url] => images/dell white.jpg
+    [stock] => 10
+    [created_at] => 2025-03-25 11:31:02
+    [updated_at] => 2025-03-25 14:08:49
+)
+
+Updated stock for variant_id 6 to 9
+Deleted Cart_Item with id: 42
+Deleted Cart with id: 9
+Variant IDs: [10,3]
+Variants: [{"id":10,"product_id":6,"variant_name":"Acer Nitro 5","color":"Black","price":20000000,"image_url":"images\/Acer Nitro 5 Black.jpg","stock":9,"created_at":"2025-04-05 11:04:20","updated_at":"2025-04-05 11:04:20"},{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":8,"created_at":"2025-03-22 15:43:06","updated_at":"2025-04-08 00:04:41"}]
+Variant Map: {"10":{"id":10,"product_id":6,"variant_name":"Acer Nitro 5","color":"Black","price":20000000,"image_url":"images\/Acer Nitro 5 Black.jpg","stock":9,"created_at":"2025-04-05 11:04:20","updated_at":"2025-04-05 11:04:20"},"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":8,"created_at":"2025-03-22 15:43:06","updated_at":"2025-04-08 00:04:41"}}
+Item: variant_id=10, name=Acer Nitro 5, image=images/Acer Nitro 5 Black.jpg
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 10
+    [user_id] => 2
+    [created_at] => 2025-04-08 08:37:41
+    [updated_at] => 2025-04-08 08:37:41
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 45
+            [cart_id] => 10
+            [variant_id] => 10
+            [color] => Black
+            [quantity] => 1
+            [price] => 20000000.00
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 46
+            [cart_id] => 10
+            [variant_id] => 3
+            [color] => Red
+            [quantity] => 1
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 35000000
+Discount: 17500000, Total Price: 17500000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 17500000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 34
+    [user_id] => 2
+    [total_price] => 17500000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-08 15:38:37
+    [updated_at] => 2025-04-08 15:38:37
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Added Order_Item for variant_id: 10
+Variant for variant_id 10: stdClass Object
+(
+    [id] => 10
+    [product_id] => 6
+    [variant_name] => Acer Nitro 5
+    [color] => Black
+    [price] => 20000000
+    [image_url] => images/Acer Nitro 5 Black.jpg
+    [stock] => 9
+    [created_at] => 2025-04-05 11:04:20
+    [updated_at] => 2025-04-05 11:04:20
+)
+
+Updated stock for variant_id 10 to 8
+Added Order_Item for variant_id: 3
+Variant for variant_id 3: stdClass Object
+(
+    [id] => 3
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => Red
+    [price] => 15000000
+    [image_url] => images/A1NX.GTHEK.002_1_supersize.jpg
+    [stock] => 8
+    [created_at] => 2025-03-22 15:43:06
+    [updated_at] => 2025-04-08 00:04:41
+)
+
+Updated stock for variant_id 3 to 7
+Deleted Cart_Item with id: 45
+Deleted Cart_Item with id: 46
+Deleted Cart with id: 10
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=cod
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=cod
+Variant IDs: [3]
+Variants: [{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":7,"created_at":"2025-03-22 15:43:06","updated_at":"2025-04-08 15:38:37"}]
+Variant Map: {"3":{"id":3,"product_id":2,"variant_name":"Acer Aspire 7","color":"Red","price":15000000,"image_url":"images\/A1NX.GTHEK.002_1_supersize.jpg","stock":7,"created_at":"2025-03-22 15:43:06","updated_at":"2025-04-08 15:38:37"}}
+Item: variant_id=3, name=Acer Aspire 7, image=images/A1NX.GTHEK.002_1_supersize.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Ngọc Hiếu, phone=0926875557, address=Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội, paymentMethod=bank
+Cart: stdClass Object
+(
+    [id] => 11
+    [user_id] => 2
+    [created_at] => 2025-04-08 09:29:30
+    [updated_at] => 2025-04-08 09:29:30
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 47
+            [cart_id] => 11
+            [variant_id] => 3
+            [color] => Red
+            [quantity] => 3
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 45000000
+Discount: 22500000, Total Price: 22500000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 22500000
+    [payment_method] => bank
+    [status] => pending
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 32
+    [user_id] => 2
+    [total_price] => 22500000.00
+    [payment_method] => bank
+    [status] => processing
+    [created_at] => 2025-04-08 11:00:03
+    [updated_at] => 2025-04-08 15:39:09
+    [fullname] => Nguyễn Ngọc Hiếu
+    [phone] => 0926875557
+    [address] => Số 32, ngõ 218 Tây Sơn, Trung Liệt, Hà Nội
+)
+
+Added Order_Item for variant_id: 3
+Variant for variant_id 3: stdClass Object
+(
+    [id] => 3
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => Red
+    [price] => 15000000
+    [image_url] => images/A1NX.GTHEK.002_1_supersize.jpg
+    [stock] => 7
+    [created_at] => 2025-03-22 15:43:06
+    [updated_at] => 2025-04-08 15:38:37
+)
+
+Updated stock for variant_id 3 to 4
+Deleted Cart_Item with id: 47
+Deleted Cart with id: 11
+Variant IDs: [9]
+Variants: [{"id":9,"product_id":6,"variant_name":"Acer Nitro 5","color":"Red","price":20000000,"image_url":"images\/Acer Nitro 5.jpg","stock":8,"created_at":"2025-04-05 11:04:08","updated_at":"2025-04-08 00:58:44"}]
+Variant Map: {"9":{"id":9,"product_id":6,"variant_name":"Acer Nitro 5","color":"Red","price":20000000,"image_url":"images\/Acer Nitro 5.jpg","stock":8,"created_at":"2025-04-05 11:04:08","updated_at":"2025-04-08 00:58:44"}}
+Item: variant_id=9, name=Acer Nitro 5, image=images/Acer Nitro 5.jpg
+Variant IDs: [5]
+Variants: [{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":8,"created_at":"2025-03-25 11:30:54","updated_at":"2025-04-08 11:00:03"}]
+Variant Map: {"5":{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":8,"created_at":"2025-03-25 11:30:54","updated_at":"2025-04-08 11:00:03"}}
+Item: variant_id=5, name=Dell Inspiron 15, image=images/dell black.jpg
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Nguyễn Văn Huy, phone=123456789, address=Hà Nội, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 12
+    [user_id] => 2
+    [created_at] => 2025-04-11 15:12:21
+    [updated_at] => 2025-04-11 15:12:21
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 51
+            [cart_id] => 12
+            [variant_id] => 5
+            [color] => Black
+            [quantity] => 1
+            [price] => 15000000.00
+        )
+
+)
+
+Subtotal: 15000000
+Discount: 0, Total Price: 15000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 15000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Nguyễn Văn Huy
+    [phone] => 123456789
+    [address] => Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 36
+    [user_id] => 2
+    [total_price] => 15000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-12 18:07:09
+    [updated_at] => 2025-04-12 18:07:09
+    [fullname] => Nguyễn Văn Huy
+    [phone] => 123456789
+    [address] => Hà Nội
+)
+
+Added Order_Item for variant_id: 5
+Variant for variant_id 5: stdClass Object
+(
+    [id] => 5
+    [product_id] => 3
+    [variant_name] => Dell Inspiron 15
+    [color] => Black
+    [price] => 15000000
+    [image_url] => images/dell black.jpg
+    [stock] => 8
+    [created_at] => 2025-03-25 11:30:54
+    [updated_at] => 2025-04-08 11:00:03
+)
+
+Updated stock for variant_id 5 to 7
+Deleted Cart_Item with id: 51
+Deleted Cart with id: 12
+Variant IDs: [2]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":1,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-13 13:04:45"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":1,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-13 13:04:45"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+User: stdClass Object
+(
+    [id] => 5
+    [username] => hieunn
+    [password] => $2y$10$CcXxC2MpreWRV/eCW6RYT.I3Uohtw1AbtY02AK2yTa/r19jJcsaoO
+    [full_name] => Nguyễn Văn Huy
+    [email] => huynv@gmail.com
+    [phone] => 0123456789
+    [address] => Hà Nội
+    [role] => editor
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-08 00:57:22
+    [updated_at] => 2025-04-12 10:42:54
+)
+
+Form data: fullname=Nguyễn Văn Hieu, phone=123456789, address=Hà Nội, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 14
+    [user_id] => 5
+    [created_at] => 2025-04-13 06:05:29
+    [updated_at] => 2025-04-13 06:05:29
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 53
+            [cart_id] => 14
+            [variant_id] => 2
+            [color] => White
+            [quantity] => 1
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 16000000
+Discount: 0, Total Price: 16000000
+Order Data: Array
+(
+    [user_id] => 5
+    [total_price] => 16000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Nguyễn Văn Hieu
+    [phone] => 123456789
+    [address] => Hà Nội
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 37
+    [user_id] => 5
+    [total_price] => 16000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-13 13:05:47
+    [updated_at] => 2025-04-13 13:05:47
+    [fullname] => Nguyễn Văn Hieu
+    [phone] => 123456789
+    [address] => Hà Nội
+)
+
+Added Order_Item for variant_id: 2
+Variant for variant_id 2: stdClass Object
+(
+    [id] => 2
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => White
+    [price] => 15000000
+    [image_url] => images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+    [stock] => 1
+    [created_at] => 2025-03-22 15:39:31
+    [updated_at] => 2025-04-13 13:04:45
+)
+
+Updated stock for variant_id 2 to 0
+Deleted Cart_Item with id: 53
+Deleted Cart with id: 14
+Variant IDs: [2]
+Variants: [{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":0,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-13 13:05:47"}]
+Variant Map: {"2":{"id":2,"product_id":2,"variant_name":"Acer Aspire 7","color":"White","price":15000000,"image_url":"images\/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png","stock":0,"created_at":"2025-03-22 15:39:31","updated_at":"2025-04-13 13:05:47"}}
+Item: variant_id=2, name=Acer Aspire 7, image=images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+User: stdClass Object
+(
+    [id] => 2
+    [username] => nampd
+    [password] => $2y$10$VRJQ7FH.siG9GAbCiF.LJO480EY6SpErOo4jGeEfgKNNxX859nNwG
+    [full_name] => Pham Dinh Nam
+    [email] => namhatsune@gmail.com
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+    [role] => admin
+    [status] => Đang hoạt động
+    [created_at] => 2025-04-06 23:04:25
+    [updated_at] => 2025-04-07 00:49:37
+)
+
+Form data: fullname=Pham Dinh Nam, phone=0926875557, address=84 Chua Boc, Quang Trung, Dong Da, paymentMethod=cod
+Cart: stdClass Object
+(
+    [id] => 13
+    [user_id] => 2
+    [created_at] => 2025-04-13 06:05:10
+    [updated_at] => 2025-04-13 06:05:10
+)
+
+Cart Items: Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 52
+            [cart_id] => 13
+            [variant_id] => 2
+            [color] => White
+            [quantity] => 1
+            [price] => 16000000.00
+        )
+
+)
+
+Subtotal: 16000000
+Discount: 0, Total Price: 16000000
+Order Data: Array
+(
+    [user_id] => 2
+    [total_price] => 16000000
+    [payment_method] => cod
+    [status] => pending
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Order created
+Order: stdClass Object
+(
+    [id] => 38
+    [user_id] => 2
+    [total_price] => 16000000.00
+    [payment_method] => cod
+    [status] => pending
+    [created_at] => 2025-04-13 13:06:01
+    [updated_at] => 2025-04-13 13:06:01
+    [fullname] => Pham Dinh Nam
+    [phone] => 0926875557
+    [address] => 84 Chua Boc, Quang Trung, Dong Da
+)
+
+Added Order_Item for variant_id: 2
+Variant for variant_id 2: stdClass Object
+(
+    [id] => 2
+    [product_id] => 2
+    [variant_name] => Acer Aspire 7
+    [color] => White
+    [price] => 15000000
+    [image_url] => images/yGwQlWWS1v6sVDteKVHMA6LBj6sB0Vky7p4gGwjq.png
+    [stock] => 0
+    [created_at] => 2025-03-22 15:39:31
+    [updated_at] => 2025-04-13 13:05:47
+)
+
+Updated stock for variant_id 2 to -1
+Deleted Cart_Item with id: 52
+Deleted Cart with id: 13
+Variant IDs: [5,6]
+Variants: [{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":7,"created_at":"2025-03-25 11:30:54","updated_at":"2025-04-12 18:07:09"},{"id":6,"product_id":3,"variant_name":"Dell Inspiron 15","color":"White","price":15000000,"image_url":"images\/dell white.jpg","stock":9,"created_at":"2025-03-25 11:31:02","updated_at":"2025-04-08 11:09:33"}]
+Variant Map: {"5":{"id":5,"product_id":3,"variant_name":"Dell Inspiron 15","color":"Black","price":15000000,"image_url":"images\/dell black.jpg","stock":7,"created_at":"2025-03-25 11:30:54","updated_at":"2025-04-12 18:07:09"},"6":{"id":6,"product_id":3,"variant_name":"Dell Inspiron 15","color":"White","price":15000000,"image_url":"images\/dell white.jpg","stock":9,"created_at":"2025-03-25 11:31:02","updated_at":"2025-04-08 11:09:33"}}
+Item: variant_id=5, name=Dell Inspiron 15, image=images/dell black.jpg
+Item: variant_id=6, name=Dell Inspiron 15, image=images/dell white.jpg

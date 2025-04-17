@@ -58,7 +58,7 @@
                 <tr class="hover:bg-gray-100">
                     <td class="border border-gray-300 px-4 py-2 text-center">{{$user->id}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$user->username}}</td>
-                    <td class="border border-gray-300 px-4 py-2 text-right">{{$user->full_name}}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{$user->full_name}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$user->email}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$user->phone}}</td>
                     <td class="border border-gray-300 px-4 py-2">{{$user->address}}</td>
@@ -71,10 +71,16 @@
                     </td>
                     <td class="border border-gray-300 px-10 py-2 text-center">
                         <div class="flex justify-center items-center gap-1">
-                            <a href="" 
+                            <a href="{{APP_URL. 'admin/users/edit/'.$user->id}}" 
                             class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition text-sm inline-flex items-center gap-1 h-8">
                                 <span class="text-base leading-none">✏️</span>
                                 <span class="leading-none">Sửa</span>
+                            </a>
+                            <a href="{{APP_URL. 'admin/users/delete/'.$user->id}}" 
+                            onclick="return confirmDelete(event)"
+                            class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition text-sm inline-flex items-center gap-1 h-8">
+                                <span class="text-base leading-none">❌</span>
+                                <span class="leading-none">Xóa</span>
                             </a>
                         </div>
                     </td>

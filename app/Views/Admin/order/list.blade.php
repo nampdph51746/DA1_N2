@@ -56,7 +56,7 @@
                 
                 <tr class="hover:bg-gray-100">
                     <td class="border border-gray-300 px-4 py-2 text-center">{{$order->id}}</td>
-                    <td class="border border-gray-300 px-4 py-2 text-center">{{$order->full_name}}</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">{{$order->fullname}}</td>
                     <td class="border border-gray-300 px-4 py-2 text-center">
                         <form action="orders/update-status" method="POST">
                             <input type="hidden" name="order_id" value="{{ $order->id }}">

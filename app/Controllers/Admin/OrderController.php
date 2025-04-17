@@ -126,7 +126,7 @@ class OrderController {
         $orders=null;
 
         if($query !== ''){
-            $orders = Order::where('full_name','LIKE',"%$query%");
+            $orders = Order::where('fullname','LIKE',"%$query%");
             $hasWhere=true;
         }
 

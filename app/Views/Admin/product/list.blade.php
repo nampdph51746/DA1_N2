@@ -32,50 +32,10 @@
                 </button>
                 <button type="submit" class="bg-gray-500 text-white px-5 py-2 rounded-full text-sm hover:bg-gray-600 transition">
                     Reset
-                <form action="{{APP_URL . 'admin/products/search'}}" method="GET" class="justify-center my-2">
-                    <div class="grid grid-cols-3 gap-4 bg-white shadow-sm rounded-lg p-4 border border-gray-300">
-                        <!-- ID -->
-                        <input type="text" name="id" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="ID">
-                        
-                        <!-- Tên sản phẩm -->
-                        <input type="text" name="product_name" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="Tên sản phẩm">
-                        
-                        <!-- Giá -->
-                        <input type="number" name="price" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none" placeholder="Giá">
-
-                        <!-- Danh mục -->
-                        <select name="category_id" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
-                            <option value="">Chọn danh mục</option>
-                            @foreach($categories as $category)
-                                <option value="{{$category->id}}">{{$category->category_name}}</option>
-                            @endforeach
-                        </select>
-
-                        <!-- Ngày tạo -->
-                        <input type="date" name="created_at" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
-
-                        <!-- Ngày cập nhật -->
-                        <input type="date" name="updated_at" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
-
-                        <!-- Trạng thái -->
-                        <select name="status" class="w-full bg-transparent border border-gray-300 px-3 py-1 rounded text-sm focus:outline-none">
-                            <option value="">Tất cả trạng thái</option>
-                            <option value="Active">Hoạt động</option>
-                            <option value="Deactive">Không hoạt động</option>
-                        </select>
-
-                        <!-- Nút tìm kiếm -->
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded text-sm hover:bg-blue-600 transition">
-                            Tìm
-                        </button>
-
-                        <!-- Nút làm mới -->
-                        <button type="reset" class="bg-gray-400 text-white px-4 py-1 rounded text-sm hover:bg-gray-500 transition">
-                            Làm mới
-                        </button>
-                    </div>
-                </div>
-            </form>
+                </button>
+            </div>
+        </div>
+    </form>
         <!-- </form> -->
         <div class="mt-4 text-left text-xl">
             <a href="{{APP_URL . 'admin/products/create'}}" class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition">

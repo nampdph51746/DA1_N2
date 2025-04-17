@@ -2,8 +2,10 @@
 namespace App\Controllers\Admin;
 use App\Models\Product;
 use App\Models\Category;
-use App\Models\Product_Variant;
 use eftec\bladeone\BladeOne;
+use App\Models\Product_Variant;
+use App\Services\Authorization;
+
 class ProductController {
     public function index(){
         $products =  Product::select(['products.*','categories.category_name as cate_name'])
@@ -55,6 +57,11 @@ class ProductController {
     }
 
     public function destroy($id){
+        if(!Authorization::can('delete_any')){
+            header('HTTP/1.1 403 Forbidden');
+            echo "<script>alert('Bạn không có quyền xóa sản phẩm!'); window.history.back();</script>";
+            exit;
+        }
        Product::delete($id);
        return redirect("admin/products");
     }

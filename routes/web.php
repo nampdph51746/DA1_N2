@@ -31,9 +31,11 @@ $router->post('/register',[AuthController::class,'store']);
 $router->get('/logout',[AuthController::class,'logout']);
 $router->get('/profile' ,[AuthController::class , 'profile']);
 $router->post('/reviews/store',[ReviewController::class,'store']);
+
 // kiểm tra xem email và sđt
 $router->get('forgot-password',[AuthController::class,'ForgotPasswordForm']);
 $router->post('forgot-password',[AuthController::class,'handleForgotPassword']);
+
 // đặt mật khẩu lại
 $router->get('reset-password',[AuthController::class,'showResetPasswordForm']);
 $router->post('reset-password',[AuthController::class,'handleResetPassword']);

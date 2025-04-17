@@ -18,6 +18,7 @@ class HomeController {
     public function index(){
         $products =  Product::select(['products.*','categories.category_name as cate_name'])
         ->join('categories','categories.id', 'products.category_id')
+        ->where('status', '=','Đang bán')
         ->limit(4)
         ->get();
         return view('Client.home',compact(var_name: 'products'));
@@ -28,10 +29,12 @@ class HomeController {
         if($categoryID){
            $products= Product::select(['products.*'])
            ->Where('category_id','=',$categoryID)
+           ->andWhere('status', '=','Đang bán')
            ->get();
         }else{
             $products = Product::select(['products.*','categories.category_name as cate_name'])
             ->join('categories','categories.id','products.category_id')
+            ->where('status', '=','Đang bán')
             ->get();
         };
     
@@ -53,11 +56,13 @@ class HomeController {
         $product_variants=Product_Variant::where('product_id','=', $product->id)->get();
         return view('Client.chitiet',compact('product','category','product_variants','products','reviews'));
     }
+
     public function timkiem(){
         $query = trim($_GET['query'] ?? '');
         $categories = Category::all();
         $products = Product::select(['products.*'])
         ->where('product_name','like','%'.$query.'%')
+        ->andWhere('status', '=','Đang bán')
         ->get();
         $message = '';
         if($query !=''){

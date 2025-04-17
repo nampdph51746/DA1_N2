@@ -2,6 +2,8 @@
 namespace App\Controllers\Admin;
 use App\Models\Voucher;
 use eftec\bladeone\BladeOne;
+use App\Services\Authorization;
+
 class VoucherController {
     public function index(){
         $vouchers = Voucher::all();
@@ -71,4 +73,13 @@ class VoucherController {
         return $blade->run("Admin.voucher.detail", compact("voucher"));
     }
   
+    public function destroy($id){
+        if(!Authorization::can('delete_any')){
+            header('HTTP/1.1 403 Forbidden');
+            echo "<script>alert('Bạn không có quyền xóa voucher!'); window.history.back();</script>";
+            exit;
+        }
+        Voucher::delete($id);
+        return redirect("admin/vouchers");
+     }
 }

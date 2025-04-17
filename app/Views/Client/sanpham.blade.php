@@ -14,9 +14,7 @@
                 🔍
             </button>
             
-        </form>
-
-        
+        </form>        
     </div>
                                 
     <!-- Hiển thị sản phẩm -->
@@ -42,12 +40,11 @@
                     </ul>
                 </div>
 
-                @if(isset($message) && $message != '')
-                    <p class="text-lg font-semibold text-blue-500">{{ $message }}</p>
-                    @endif
-
                 <!-- Products List -->
                 <div class="col-span-9">
+                    @if(isset($message) && $message != '')
+                        <p class="text-lg font-semibold text-blue-500">{{ $message }}</p>
+                    @endif  
                     <div class="flex justify-between items-center mb-8">
                         <h2 class="font-semibold text-4xl text-black-800">Danh sách sản phẩm</h2>
                     </div>

@@ -2,6 +2,7 @@
 namespace App\Controllers\Admin;
 use App\Models\Category;
 use App\Models\Product;
+use App\Services\Authorization;
 class CategoryController {
     public function index(){
         $categories = Category::all();
@@ -29,6 +30,11 @@ class CategoryController {
     }
 
     public function destroy($id ){
+        if(!Authorization::can('delete_any')){
+            header('HTTP/1.1 403 Forbidden');
+            echo "<script>alert('Bạn không có quyền xóa danh mục!'); window.history.back();</script>";
+            exit;
+        }
             Category::delete(id: $id );
             return redirect('admin/categories');
     }
